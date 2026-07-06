@@ -1,6 +1,6 @@
 # study-flashcards.app
 
-Landing page for **AI Flashcards: Study & Learn** (iOS).
+Landing page for **Flashcards Maker - Study Cards** (iOS).
 
 ## Deploy
 
@@ -34,6 +34,6 @@ Use DNS only (grey cloud). Set SSL mode to **Full** in Cloudflare.
 
 ## Links
 
-- App Store: https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111
+- App Store: https://apps.apple.com/us/app/flashcards-maker-study-cards/id6756944111
 - Privacy: https://mpc-app-c2e7a.web.app/cards-privacy.html
 - Terms: https://mpc-app-c2e7a.web.app/cards-terms.html
