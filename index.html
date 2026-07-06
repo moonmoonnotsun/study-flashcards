@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Flashcards App - AI Study & Learn | Spaced Repetition for iPhone</title>
+    <meta name="title" content="Flashcards App - AI Study & Learn | Spaced Repetition for iPhone">
+    <meta name="description" content="Flashcards app for iPhone — AI-generated decks, spaced repetition, and active recall. Study smarter for exams, languages, and anything you need to memorize.">
+    <meta name="keywords" content="flashcards app, spaced repetition, AI flashcards, study app, learning app, memory app, exam prep, MCAT, SAT, GRE, language learning, active recall, iOS flashcards, free study app">
+    <meta name="author" content="omoot apps">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AI Flashcards">
+    <link rel="canonical" href="https://study-flashcards.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://study-flashcards.app/">
+    <meta property="og:title" content="Flashcards App - AI Study & Learn | Spaced Repetition for iPhone">
+    <meta property="og:description" content="Flashcards app for iPhone — AI-generated decks, spaced repetition, and active recall. Study smarter for exams and languages.">
+    <meta property="og:image" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AI Flashcards: Study & Learn iOS App">
+    <meta property="og:image:secure_url" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
+    <meta property="og:site_name" content="Flashcards App - AI Study & Learn">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:updated_time" content="2026-07-06T00:00:00+00:00">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://study-flashcards.app/">
+    <meta name="twitter:title" content="Flashcards App - AI Study & Learn | Spaced Repetition for iPhone">
+    <meta name="twitter:description" content="Flashcards app for iPhone — AI-generated decks, spaced repetition, and active recall. Study smarter for exams and languages.">
+    <meta name="twitter:image" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
+    <meta name="twitter:image:alt" content="AI Flashcards: Study & Learn iOS App">
+    
+    <!-- App Store -->
+    <meta name="apple-itunes-app" content="app-id=6756944111">
+    <meta name="theme-color" content="#6C65FF">
+    
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://apps.apple.com" crossorigin>
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/css/app-page.css" as="style">
+    <link rel="preload" href="assets/images/cards/optimized/main-screen.png" as="image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/cards/optimized/logo-fav.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/cards/optimized/logo-fav.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/cards/optimized/logo-fav.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/cards/optimized/logo-fav.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/cards/optimized/logo-fav.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/app-page.css">
+    
+    <!-- Mixpanel Analytics -->
+    <script type="text/javascript">
+        (function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===
+        e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[]);
+        
+        mixpanel.init('2ab77ed29d0b04d62a75f63eaecc2a94', {
+            autocapture: false,
+            record_sessions_percent: 0,
+            record_heatmap_data: false,
+            api_host: 'https://api-eu.mixpanel.com',
+            track_pageview: false
+        });
+        
+        // Explicitly disable autocapture to ensure no [Auto] events
+        if (typeof mixpanel.set_config === 'function') {
+            mixpanel.set_config({ autocapture: false });
+        }
+    </script>
+    <script src="assets/js/mixpanel-tracker.js"></script>
+    <script>
+        // Initialize Mixpanel Tracker
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof MixpanelTracker !== 'undefined') {
+                MixpanelTracker.init('2ab77ed29d0b04d62a75f63eaecc2a94', {
+                    projectName: 'cards',
+                    debug: false
+                });
+            }
+        });
+    </script>
+    
+    <!-- AI Flashcards Color Overrides - Modern Light Theme -->
+    <style>
+        :root {
+            --primary-color: #6C65FF;
+            --primary-dark: #655FDE;
+            --primary-light: #7B75FF;
+            --accent-color: #8B85FF;
+            --gradient-primary: linear-gradient(135deg, #6C65FF 0%, #655FDE 100%);
+            --gradient-card: linear-gradient(135deg, rgba(108, 101, 255, 0.04) 0%, rgba(101, 95, 222, 0.02) 100%);
+        }
+        
+        body {
+            background-color: #f8fafc !important;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(108, 101, 255, 0.1) 0px, transparent 50%),
+                radial-gradient(at 80% 70%, rgba(101, 95, 222, 0.26) 0px, transparent 50%);
+        }
+        
+        .grid-background {
+            background-image: 
+                linear-gradient(rgba(108, 101, 255, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(108, 101, 255, 0.15) 1px, transparent 1px);
+            background-size: 32px 32px;
+            opacity: 0.8;
+        }
+        
+        main {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-hero {
+            background: none;
+            padding-top: 80px;
+            padding-bottom: 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .app-hero::before {
+            display: none;
+        }
+        
+        .app-logo {
+            filter: none;
+            background: transparent;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 50px !important;
+            padding: 0;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .app-icon-large:hover .app-logo {
+            filter: none;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        
+        @media (min-width: 769px) {
+            .app-icon-large:hover .app-logo {
+                transform: scale(1.05);
+            }
+            
+            #features.app-section {
+                padding-top: 0;
+            }
+        }
+        
+        /* Remove shadows on mobile to prevent lag during fadeInUp animation */
+        @media (max-width: 768px) {
+            .app-logo {
+                filter: none !important;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+                border-radius: 22.37% !important;
+                border: 1px solid rgba(108, 101, 255, 0.2) !important;
+            }
+            
+            .app-icon-large:hover .app-logo,
+            .app-icon-large:active .app-logo {
+                filter: none !important;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+            }
+        }
+        
+        .app-icon-large a {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .phone-mockup {
+            max-width: 300px !important;
+        }
+        
+        .phone-screenshot {
+            width: auto !important;
+        }
+        
+        @media (min-width: 1400px) {
+            .phone-mockup {
+                max-width: 400px !important;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .phone-mockup {
+                max-width: 300px !important;
+            }
+        }
+        
+        .app-title {
+            color: #334155 !important;
+            -webkit-text-fill-color: #334155 !important;
+            background: none !important;
+            text-shadow: none !important;
+            font-size: 3.5rem !important;
+            margin-bottom: 24px !important;
+            line-height: 1.1 !important;
+            font-weight: 800 !important;
+            letter-spacing: -0.02em !important;
+        }
+        
+        @media (max-width: 1024px) {
+            .app-title {
+                font-size: 2.5rem !important;
+                margin-bottom: 30px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .app-title {
+                font-size: 2rem !important;
+                margin-bottom: 16px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .app-title {
+                font-size: 1.75rem !important;
+                margin-bottom: 30px !important;
+            }
+        }
+        
+        .app-tagline {
+            font-size: 1.25rem !important;
+            font-weight: 400 !important;
+            letter-spacing: -0.01em !important;
+            line-height: 1.8 !important;
+            color: #64748b !important;
+            max-width: 640px !important;
+            margin: 0 auto 56px !important;
+            text-shadow: none !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        }
+        
+        @media (max-width: 1024px) {
+            .app-tagline {
+                font-size: 1.125rem !important;
+                max-width: 550px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .app-tagline {
+                font-size: 1.0625rem !important;
+                margin-bottom: 40px !important;
+                line-height: 1.7 !important;
+                max-width: 100% !important;
+                font-weight: 400 !important;
+                color: #718096 !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .app-tagline {
+                font-size: 1rem !important;
+                line-height: 1.65 !important;
+                margin-bottom: 40px !important;
+            }
+        }
+        
+        .app-badges {
+            margin-top: 0 !important;
+            margin-bottom: 30px !important;
+            z-index: 10 !important;
+            position: relative;
+        }
+        
+        @media (max-width: 768px) {
+            .app-badges {
+                margin-bottom: 10px !important;
+            }
+        }
+        
+        .highlight-flashcards {
+            background: linear-gradient(135deg, #6C65FF 0%, #655FDE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: none;
+            position: relative;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        
+        .app-name-highlight {
+            color: #475569 !important;
+            -webkit-text-fill-color: #475569 !important;
+            background: none !important;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        
+        .app-slogan {
+            background: linear-gradient(135deg, #6C65FF 0%, #e8e7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: none;
+            font-size: 1.5rem !important;
+            margin-bottom: 16px !important;
+            margin-top: 0 !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.02em !important;
+        }
+        
+        @media (max-width: 768px) {
+            .app-slogan {
+                font-size: 1.25rem !important;
+                margin-bottom: 30px !important;
+                margin-top: 0 !important;
+            }
+
+            .app-badges {
+                margin-bottom: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .app-slogan {
+                font-size: 1.125rem !important;
+            }
+        }
+        
+        .app-icon-large {
+            margin-bottom: 0 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .app-icon-large {
+                margin-bottom: 0 !important;
+            }
+        }
+        
+        .section-title {
+            color: #334155 !important;
+            -webkit-text-fill-color: #334155 !important;
+            background: none !important;
+            text-shadow: none !important;
+            font-weight: 800 !important;
+            letter-spacing: -0.02em !important;
+        }
+        
+        .section-title .title-line {
+            display: block;
+        }
+        
+        .section-title .title-accent {
+            background: linear-gradient(135deg, #6C65FF 0%, #655FDE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: none;
+        }
+        
+        .cta-title {
+            color: #334155 !important;
+            -webkit-text-fill-color: #334155 !important;
+            background: none !important;
+            text-shadow: none !important;
+            font-weight: 800 !important;
+            letter-spacing: -0.02em !important;
+        }
+        
+        .feature-icon-container {
+            background: rgba(108, 101, 255, 0.06);
+            border: 1px solid rgba(108, 101, 255, 0.1);
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
+                        0 1px 2px rgba(0, 0, 0, 0.03);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            border-color: rgba(108, 101, 255, 0.15);
+            box-shadow: 0 8px 24px rgba(108, 101, 255, 0.1), 
+                        0 2px 8px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+        
+        .feature-card:hover .feature-icon-container {
+            background: rgba(108, 101, 255, 0.1);
+            border-color: rgba(108, 101, 255, 0.15);
+        }
+        
+        .screenshot-item {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
+                        0 1px 2px rgba(0, 0, 0, 0.03);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .screenshot-item:hover {
+            border-color: rgba(108, 101, 255, 0.15);
+            box-shadow: 0 8px 24px rgba(108, 101, 255, 0.1), 
+                        0 2px 8px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+        
+        .screenshots-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            max-width: 1200px !important;
+        }
+
+        @media (min-width: 769px) {
+            .screenshots-grid {
+                justify-content: center !important;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .screenshots-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .screenshots-grid {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                justify-content: flex-start !important;
+                grid-template-columns: none !important;
+                max-width: none !important;
+                width: max-content !important;
+                margin: 0 !important;
+            }
+
+            .screenshot-item {
+                flex: none !important;
+                width: var(--screenshot-card-width) !important;
+                min-width: var(--screenshot-card-width) !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .screenshots-grid {
+                grid-template-columns: none !important;
+            }
+        }
+
+        .about-copy {
+            color: #475569;
+        }
+
+        .app-store-link {
+            color: #6C65FF;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(108, 101, 255, 0.35);
+        }
+
+        .app-store-link:hover {
+            color: #655FDE;
+            border-bottom-color: rgba(101, 95, 222, 0.6);
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.92);
+            border-color: rgba(108, 101, 255, 0.2);
+        }
+
+        .faq-item[open] {
+            border-color: rgba(108, 101, 255, 0.4);
+            background: #ffffff;
+        }
+
+        .faq-question {
+            color: #0f172a;
+        }
+
+        .faq-icon {
+            color: #6C65FF;
+        }
+
+        .faq-item[open] .faq-icon {
+            color: #655FDE;
+        }
+
+        .faq-answer {
+            color: #64748b;
+        }
+
+        .cta-description .app-store-link {
+            color: #6C65FF;
+            border-bottom-color: rgba(108, 101, 255, 0.35);
+        }
+        
+        .cta-card {
+            background: #ffffff;
+            border: 1px solid rgba(108, 101, 255, 0.1);
+            box-shadow: 0 4px 16px rgba(108, 101, 255, 0.06), 
+                        0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+        
+        .cta-card::before {
+            background: radial-gradient(circle, rgba(108, 101, 255, 0.02) 0%, transparent 70%);
+        }
+        
+        .cta-title {
+            color: #0f172a !important;
+        }
+        
+        .cta-description {
+            color: #64748b !important;
+        }
+        
+        .app-section {
+            background-color: transparent !important;
+        }
+        
+        .app-section-alt {
+            background-color: #f1f5f9 !important;
+        }
+        
+        .section-subtitle {
+            color: #64748b !important;
+        }
+        
+        .feature-title {
+            color: #334155 !important;
+        }
+        
+        .feature-description {
+            color: #64748b !important;
+        }
+        
+        .logo-circle {
+            background: var(--gradient-primary);
+            box-shadow: 0 0 20px rgba(108, 101, 255, 0.4);
+        }
+        
+        .footer-link:hover {
+            color: var(--primary-light);
+        }
+        
+        .screenshot-placeholder {
+            border: 2px dashed rgba(108, 101, 255, 0.2);
+            background: #f8f9fa;
+        }
+        
+        .screenshot-placeholder:hover {
+            border-color: rgba(108, 101, 255, 0.3);
+            background: #f1f3f5;
+        }
+        
+        .app-section-alt {
+            background-color: #f8f9fa !important;
+        }
+        
+        .section-subtitle {
+            color: #4a5568 !important;
+        }
+        
+        .feature-title {
+            color: #334155 !important;
+        }
+        
+        .feature-description {
+            color: #4a5568 !important;
+        }
+        
+        .footer-link {
+            color: #64748b !important;
+        }
+        
+        .footer-link:hover {
+            color: #6C65FF !important;
+        }
+        
+        .footer-logo .logo-text {
+            color: #334155 !important;
+        }
+        
+        .footer-copyright {
+            color: #64748b !important;
+        }
+        
+        .app-footer {
+            background-color: #f8fafc !important;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        
+        .logo-circle {
+            background: var(--gradient-primary);
+            box-shadow: 0 2px 8px rgba(108, 101, 255, 0.15);
+        }
+        
+        .btn-app-store {
+            background: linear-gradient(135deg, #6C65FF 0%, #655FDE 100%);
+            box-shadow: 0 2px 8px rgba(108, 101, 255, 0.25),
+                        0 1px 4px rgba(108, 101, 255, 0.15);
+            padding: 22px 36px !important;
+            min-height: 64px !important;
+            font-size: 1.125rem !important;
+            border: none;
+            transition: all 0.2s ease;
+            color: #ffffff !important;
+            font-weight: 600 !important;
+        }
+        
+        .btn-app-store svg {
+            fill: #ffffff !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-app-store span {
+            color: #ffffff !important;
+        }
+        
+        .btn-app-store:hover {
+            background: linear-gradient(135deg, #7B75FF 0%, #6C65FF 100%);
+            box-shadow: 0 4px 16px rgba(108, 101, 255, 0.35),
+                        0 2px 8px rgba(108, 101, 255, 0.2);
+            transform: translateY(-1px);
+            color: #ffffff !important;
+        }
+        
+        .btn-app-store:hover svg {
+            fill: #ffffff !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-app-store:hover span {
+            color: #ffffff !important;
+        }
+        
+        .btn-app-store:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(108, 101, 255, 0.25);
+        }
+        
+        @media (max-width: 768px) {
+            .btn-app-store {
+                padding: 20px 40px !important;
+                min-height: 60px !important;
+                font-size: 1.0625rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .btn-app-store {
+                padding: 18px 28px !important;
+                min-height: 56px !important;
+                font-size: 1rem !important;
+            }
+        }
+        
+        /* Mobile Font Size Adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem !important;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem !important;
+            }
+            
+            .feature-title {
+                font-size: 1.125rem !important;
+            }
+            
+            .feature-description {
+                font-size: 0.9375rem !important;
+                line-height: 1.6 !important;
+            }
+            
+            .cta-title {
+                font-size: 1.75rem !important;
+            }
+            
+            .cta-description {
+                font-size: 1.0625rem !important;
+                line-height: 1.6 !important;
+            }
+            
+            .footer-logo .logo-text {
+                font-size: 1rem !important;
+                color: #334155 !important;
+            }
+            
+            .footer-link {
+                font-size: 0.9375rem !important;
+            }
+            
+            .footer-copyright {
+                font-size: 0.875rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.75rem !important;
+            }
+            
+            .section-subtitle {
+                font-size: 0.9375rem !important;
+            }
+            
+            .feature-title {
+                font-size: 1rem !important;
+            }
+            
+            .feature-description {
+                font-size: 0.875rem !important;
+                line-height: 1.5 !important;
+            }
+            
+            .cta-title {
+                font-size: 1.5rem !important;
+            }
+            
+            .cta-description {
+                font-size: 1rem !important;
+                line-height: 1.5 !important;
+            }
+        }
+        
+        /* Reduce Bottom Spacing on Mobile */
+        @media (max-width: 768px) {
+            .app-section {
+                padding-bottom: 50px !important;
+            }
+            
+            .app-hero {
+                margin-bottom: 30px !important;
+                padding-bottom: 40px !important;
+                padding-top: 40px !important;
+            }
+            
+            .section-header {
+                margin-bottom: 40px !important;
+            }
+            
+            .cta-section {
+                padding-bottom: 50px !important;
+            }
+            
+            .cta-card {
+                margin-bottom: 0 !important;
+            }
+            
+            .app-footer {
+                margin-top: 40px !important;
+                padding-top: 40px !important;
+                padding-bottom: 30px !important;
+            }
+            
+            .footer-content {
+                margin-bottom: 20px !important;
+            }
+            
+            .footer-copyright {
+                padding-top: 20px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .app-section {
+                padding-bottom: 40px !important;
+            }
+            
+            .app-hero {
+                margin-bottom: 0px !important;
+                padding-bottom: 0px !important;
+                padding-top: 50px !important;
+            }
+            
+            .section-header {
+                margin-bottom: 30px !important;
+            }
+            
+            .cta-section {
+                padding-bottom: 40px !important;
+            }
+            
+            .app-footer {
+                margin-top: 30px !important;
+                padding-top: 30px !important;
+                padding-bottom: 24px !important;
+            }
+            
+            .footer-content {
+                margin-bottom: 16px !important;
+            }
+            
+            .footer-copyright {
+                padding-top: 16px !important;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AI Flashcards: Study & Learn",
+        "alternateName": ["Flashcards App", "AI Flashcards", "Study Flashcards App"],
+        "url": "https://study-flashcards.app/",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "iOS",
+        "inLanguage": "en-US",
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-07-06",
+        "author": {
+            "@type": "Organization",
+            "name": "omoot apps",
+            "url": "https://omoot.app/"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "Flashcards app for iPhone with AI-generated decks, spaced repetition, active recall, and pre-made study libraries. Built for students, language learners, and exam prep.",
+        "screenshot": "https://study-flashcards.app/assets/images/cards/optimized/main-screen.png",
+        "featureList": [
+            "AI-Powered Flashcard Generation",
+            "Spaced Repetition Algorithm",
+            "Active Recall Practice",
+            "Study Streaks & Activity Tracking",
+            "Pre-Made Decks Library",
+            "Custom Flashcard Creation",
+            "Progress Tracking"
+        ],
+        "softwareVersion": "1.0",
+        "downloadUrl": "https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111",
+        "installUrl": "https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111",
+        "softwareRequirements": "Requires iOS 15.0 or later"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Flashcards App - AI Study & Learn",
+        "alternateName": "Study Flashcards App",
+        "url": "https://study-flashcards.app/",
+        "description": "Official landing page for AI Flashcards: Study & Learn, a flashcards app for iPhone.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "omoot apps",
+            "url": "https://omoot.app/"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "omoot apps",
+        "url": "https://omoot.app/",
+        "logo": "https://study-flashcards.app/assets/images/cards/optimized/logo.png"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a flashcards app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A flashcards app helps you memorize with question-and-answer cards, spaced repetition, and active recall. AI Flashcards: Study & Learn is a flashcards app for iPhone with AI deck generation and science-backed review scheduling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is AI Flashcards: Study & Learn free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. AI Flashcards: Study & Learn is free to download on the App Store. Optional premium features are available as in-app purchases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does this flashcards app use spaced repetition?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The app schedules reviews at optimal intervals so you move information from short-term to long-term memory efficiently."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can AI generate flashcards for me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Enter a topic and the app creates ready-to-study flashcards for languages, science, medicine, history, exam prep, and more."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are there pre-made flashcard decks?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Browse curated decks for medical, languages, science, exams, history, geography, art, literature, and more — or create your own custom decks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this good for exam prep?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Students use it for SAT, GRE, MCAT, language tests, and general memorization with active recall and progress tracking."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Flashcards App",
+                "item": "https://study-flashcards.app/"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <main>
+    <div class="app-hero">
+        <div class="app-hero-container">
+            <div class="app-hero-content">
+                <div class="app-icon-large">
+                    <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" target="_blank" rel="noopener noreferrer" aria-label="Download AI Flashcards: Study & Learn on the App Store" style="display: block; text-decoration: none;">
+                        <img src="assets/images/cards/optimized/logo.png" alt="AI Flashcards: Study & Learn Logo" class="app-logo" width="120" height="120" loading="eager" decoding="async">
+                    </a>
+                </div>
+                <p class="app-slogan">Flashcards App for iPhone</p>
+                <h1 class="app-title">Flashcards App for <span class="highlight-flashcards">Students</span> and Exam Prep</h1>
+                <p class="app-tagline"><a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" class="app-store-link" target="_blank" rel="noopener noreferrer">AI Flashcards: Study & Learn</a> uses spaced repetition and active recall to help you memorize faster and remember longer.</p>
+                <div class="app-badges">
+                    <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Download on the App Store">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" style="margin-right: 12px; vertical-align: middle;">
+                            <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path>
+                        </svg>
+                        <span>Download on the App Store</span>
+                        <span class="btn-divider"></span>
+                        <span class="btn-free">Free</span>
+                    </a>
+                </div>
+            </div>
+            <div class="app-hero-visual">
+                <div class="phone-mockup">
+                    <img src="assets/images/cards/optimized/main-screen.png" alt="AI Flashcards: Study & Learn iOS app running on iPhone showing main flashcard interface" class="phone-screenshot" width="400" height="800" loading="eager" decoding="async">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="app-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-line">Science-backed learning,</span>
+                    <span class="title-line title-accent">AI-powered efficiency</span>
+                </h2>
+                <p class="section-subtitle">Everything you need to master any subject. From AI-generated flashcards to intelligent spaced repetition, all in one powerful study app.</p>
+            </div>
+            <h3 class="sr-only">AI Flashcards Features</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Flashcard Generation</h3>
+                    <p class="feature-description">Create flashcards instantly with AI. Just enter a topic and get ready-to-study cards for languages, medicine, science, history, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Spaced Repetition Algorithm</h3>
+                    <p class="feature-description">Our intelligent algorithm schedules reviews at optimal intervals, moving information from short-term to long-term memory efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Active Recall Practice</h3>
+                    <p class="feature-description">Test yourself with proven memory techniques. Flip cards, rate your knowledge, and watch your retention improve.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Study Streaks & Activity Tracking</h3>
+                    <p class="feature-description">Build consistent study habits with daily streaks. Track your progress with detailed activity calendars and statistics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                            <line x1="15" y1="3" x2="15" y2="21"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="3" y1="15" x2="21" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Pre-Made Decks Library</h3>
+                    <p class="feature-description">Access hundreds of curated flashcard decks for Medical, Languages, Science, Exams, History, Geography, Art, Literature, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-container">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                            <polyline points="17 21 17 13 7 13 7 21"/>
+                            <polyline points="7 3 7 8 15 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Custom Flashcard Creation</h3>
+                    <p class="feature-description">Create your own decks with text, images, and rich formatting. Perfect for personalized study materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section app-section-alt" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-subtitle">Experience the intuitive interface designed for effective studying</p>
+            </div>
+        </div>
+        <div class="screenshots-carousel" aria-label="App screenshots">
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen1.jpg" alt="AI Flashcards iOS app showing AI-powered flashcard generation" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">AI Flashcard Generation</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen2.jpg" alt="AI Flashcards iOS app showing spaced repetition algorithm" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">Spaced Repetition</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen3.jpg" alt="AI Flashcards iOS app showing study modes and progress tracking" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">Study Modes & Progress</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen4.jpg" alt="AI Flashcards iOS app showing pre-made decks library" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">Pre-Made Decks</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen5.jpg" alt="AI Flashcards iOS app showing custom flashcard creation" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">Custom Flashcard Creation</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/cards/optimized/screen6.jpg" alt="AI Flashcards iOS app showing study streaks and activity tracking" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display: none;">Study Streaks & Tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section" id="about-flashcards">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Is a <span class="title-accent">Flashcards App</span>?</h2>
+                <p class="section-subtitle about-copy">A flashcards app helps you memorize with bite-sized cards, spaced repetition, and active recall. <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" class="app-store-link" target="_blank" rel="noopener noreferrer">AI Flashcards: Study & Learn</a> is a study flashcards app for iPhone — AI deck generation, pre-made libraries, custom cards, and progress tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section app-section-alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Flashcards App <span class="title-accent">FAQ</span></h2>
+                <p class="section-subtitle">Common questions about our flashcards app for iPhone</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">What is a flashcards app?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">A flashcards app helps you memorize with Q&amp;A cards, spaced repetition, and active recall. <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" class="app-store-link" target="_blank" rel="noopener noreferrer">AI Flashcards: Study & Learn</a> adds AI deck generation and review scheduling on iPhone.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">Is this flashcards app free?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes — download free on the App Store. Premium features are optional in-app purchases.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">Does it use spaced repetition?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Reviews are scheduled at optimal intervals to move information into long-term memory.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">Can AI generate flashcards?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Enter a topic and get ready-to-study cards for languages, science, medicine, history, and exam prep.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">Are there pre-made decks?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Curated decks for medical, languages, science, exams, history, and more — plus custom deck creation.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">Good for exam prep?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Students use it for SAT, GRE, MCAT, language tests, and general memorization with streaks and progress stats.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-card">
+            <h2 class="cta-title">Download the flashcards app</h2>
+            <p class="cta-description">Get <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" class="app-store-link" target="_blank" rel="noopener noreferrer">AI Flashcards: Study & Learn</a> on iPhone — AI-powered spaced repetition for exam prep, languages, and memorizing anything effectively.</p>
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/us/app/ai-flashcards-study-learn/id6756944111" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Download on the App Store">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
+                        <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path>
+                    </svg>
+                    <span>Download on the App Store</span>
+                    <span class="btn-divider"></span>
+                    <span class="btn-free">Free</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="app-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">A</div>
+                    <span class="logo-text">AI Flashcards: Study & Learn</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://mpc-app-c2e7a.web.app/cards-privacy.html" target="_blank" rel="noopener noreferrer" class="footer-link">Privacy</a>
+                    <a href="https://mpc-app-c2e7a.web.app/cards-terms.html" target="_blank" rel="noopener noreferrer" class="footer-link">Terms</a>
+                    <a href="mailto:dev.ohmyapp@gmail.com" class="footer-link">Support</a>
+                    <a href="mailto:dev.ohmyapp@gmail.com" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2026 AI Flashcards: Study & Learn</p>
+        </div>
+    </footer>
+    </main>
+    <script>
+        (function () {
+            var carousel = document.querySelector('.screenshots-carousel');
+            if (!carousel) return;
+            function resetCarouselScroll() { carousel.scrollLeft = 0; }
+            resetCarouselScroll();
+            window.addEventListener('load', resetCarouselScroll);
+            window.addEventListener('pageshow', function (event) {
+                if (event.persisted) resetCarouselScroll();
+            });
+        })();
+        (function () {
+            document.querySelectorAll('.faq-item').forEach(function (details) {
+                var summary = details.querySelector('.faq-question');
+                var wrap = details.querySelector('.faq-answer-wrap');
+                if (!summary || !wrap) return;
+                summary.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    if (details.open) {
+                        details.classList.add('is-closing');
+                        wrap.addEventListener('transitionend', function onClose(endEvent) {
+                            if (endEvent.propertyName !== 'grid-template-rows') return;
+                            details.classList.remove('is-closing');
+                            details.open = false;
+                            wrap.removeEventListener('transitionend', onClose);
+                        });
+                    } else {
+                        details.open = true;
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
