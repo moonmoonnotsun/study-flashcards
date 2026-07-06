@@ -987,13 +987,13 @@
 }
 
 .cta-description .app-store-link {
-    color: #e0e7ff;
-    border-bottom-color: rgba(224, 231, 255, 0.45);
+    color: #a5b4fc;
+    border-bottom-color: rgba(165, 180, 252, 0.4);
 }
 
 .cta-description .app-store-link:hover {
-    color: #ffffff;
-    border-bottom-color: rgba(255, 255, 255, 0.7);
+    color: #c7d2fe;
+    border-bottom-color: rgba(199, 210, 254, 0.75);
 }
 
 .faq-list {
