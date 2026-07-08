@@ -54,6 +54,24 @@ const LOCALE_CONFIG = {
   'fr-CA': { dir: 'fr-ca', hreflang: 'fr-CA', label: 'FR-CA' },
 };
 
+// Languages that don't delimit words with spaces - a literal space between
+// concatenated title fragments would be visually wrong for these locales.
+const NO_SPACE_LOCALES = new Set(['ja', 'zh-Hans', 'zh-Hant']);
+
+// Joins two adjacent title fragments (e.g. plain text immediately followed by
+// a <span> highlight) with a space where the locale's script uses spaces
+// between words, and no space for CJK locales. Only inserts a separator when
+// both sides actually have content, so it's safe even when one side is empty.
+function titleSep(code, left, right) {
+  if (!left || !right) return '';
+  if (/\s$/.test(left) || /^\s/.test(right)) return '';
+  // Never insert a space right before punctuation (e.g. a comma-led
+  // continuation like ", Streamers and DJs") - that would read wrong
+  // regardless of locale.
+  if (/^[,.;:!?、，。；：！？)\]}]/.test(right)) return '';
+  return NO_SPACE_LOCALES.has(code) ? '' : ' ';
+}
+
 const LOCALES = Object.keys(LOCALE_CONFIG);
 const ALL_LOCALES = [
   { code: 'en', hreflang: 'en', path: '/', label: 'EN' },
@@ -266,7 +284,7 @@ function buildLocalePage(code) {
   html = html.replace(/<p class="app-slogan">[^<]*<\/p>/, `<p class="app-slogan">${o.heroSlogan}</p>`);
   html = html.replace(
     /<h1 class="app-title">[\s\S]*?<\/h1>/,
-    `<h1 class="app-title">${o.heroH1Before}<span class="highlight-flashcards">${o.heroH1Highlight}</span>${o.heroH1After}</h1>`,
+    `<h1 class="app-title">${o.heroH1Before}${titleSep(code, o.heroH1Before, o.heroH1Highlight)}<span class="highlight-flashcards">${o.heroH1Highlight}</span>${titleSep(code, o.heroH1Highlight, o.heroH1After)}${o.heroH1After}</h1>`,
   );
   const taglineWithLink = `<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a> ${o.heroTagline}`;
   html = html.replace(/<p class="app-tagline">[\s\S]*?<\/p>/, `<p class="app-tagline">${taglineWithLink}</p>`);
@@ -295,7 +313,7 @@ function buildLocalePage(code) {
 
   html = html.replace(
     /<h2 class="section-title">What Is a <span class="title-accent">Flashcards App<\/span>\?<\/h2>/,
-    `<h2 class="section-title">${o.sectionAboutTitle}<span class="title-accent">${o.sectionAboutTitleAccent}</span>${o.sectionAboutTitleEnd}</h2>`,
+    `<h2 class="section-title">${o.sectionAboutTitle}${titleSep(code, o.sectionAboutTitle, o.sectionAboutTitleAccent)}<span class="title-accent">${o.sectionAboutTitleAccent}</span>${o.sectionAboutTitleEnd}</h2>`,
   );
   html = html.replace(
     /<p class="section-subtitle about-copy">[\s\S]*?<\/p>/,
@@ -304,7 +322,7 @@ function buildLocalePage(code) {
 
   html = html.replace(
     /<h2 class="section-title">Flashcards App <span class="title-accent">FAQ<\/span><\/h2>/,
-    `<h2 class="section-title">${o.faqTitle}<span class="title-accent">${o.faqTitleAccent}</span></h2>`,
+    `<h2 class="section-title">${o.faqTitle}${titleSep(code, o.faqTitle, o.faqTitleAccent)}<span class="title-accent">${o.faqTitleAccent}</span></h2>`,
   );
   html = html.replace(
     /<p class="section-subtitle">Common questions about our flashcards app for iPhone<\/p>/,
