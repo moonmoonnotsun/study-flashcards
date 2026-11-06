@@ -26,7 +26,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Flashcards Maker">
+    <meta name="apple-mobile-web-app-title" content="Flashcards AI Study - Moreo">
     <link rel="canonical" href="https://study-flashcards.app/it/">
     
     <!-- Open Graph / Facebook -->
@@ -37,9 +37,9 @@
     <meta property="og:image" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Flashcards Maker - Study Cards iOS App">
+    <meta property="og:image:alt" content="Flashcards AI Study - Moreo iOS App">
     <meta property="og:image:secure_url" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
-    <meta property="og:site_name" content="Flashcards Maker - Study Cards">
+    <meta property="og:site_name" content="Flashcards AI Study - Moreo">
     <meta property="og:locale" content="it_IT">
     <meta property="og:updated_time" content="2026-07-06T00:00:00+00:00">
     
@@ -49,7 +49,7 @@
     <meta name="twitter:title" content="Flashcards Maker - Carte | Ripetizione dilazionata iPhone e Android">
     <meta name="twitter:description" content="App di flashcard per iPhone e Android - mazzi IA, ripetizione dilazionata e richiamo attivo. Studia meglio per esami, lingue e memorizzazione.">
     <meta name="twitter:image" content="https://study-flashcards.app/assets/images/cards/optimized/main-screen.png">
-    <meta name="twitter:image:alt" content="Flashcards Maker - Study Cards iOS App">
+    <meta name="twitter:image:alt" content="Flashcards AI Study - Moreo iOS App">
     
     <!-- App Store -->
     <meta name="apple-itunes-app" content="app-id=6756944111">
@@ -154,7 +154,7 @@
             background: transparent;
             border: none;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-radius: 50px !important;
+            border-radius: 22px !important;
             padding: 0;
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                         opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -628,17 +628,25 @@
         }
         
         .btn-app-store {
-            background: linear-gradient(135deg, #2C78FA 0%, #1B5FD4 100%);
-            box-shadow: 0 2px 8px rgba(44, 120, 250, 0.25),
-                        0 1px 4px rgba(44, 120, 250, 0.15);
-            padding: 22px 36px !important;
-            min-height: 64px !important;
-            font-size: 1.125rem !important;
-            border: none;
-            transition: all 0.2s ease;
-            color: #ffffff !important;
+            background: #2C78FA !important;
+            box-shadow: none !important;
+            padding: 16px 20px !important;
+            min-height: 0 !important;
+            font-size: 18px !important;
             font-weight: 600 !important;
+            letter-spacing: 0 !important;
+            text-transform: none !important;
+            border: none;
+            border-radius: 16px !important;
+            gap: 14px !important;
+            width: auto !important;
+            color: #ffffff !important;
         }
+        .btn-play { background: #01875F !important; }
+        .btn-play:hover { background: #01a36e !important; }
+        .btn-app-store svg { width: 22px; height: 22px; margin-right: 0 !important; }
+        .btn-divider { height: 22px; background: rgba(255,255,255,0.35) !important; margin: 0 !important; }
+        .btn-free { font-weight: 700; }
         
         .btn-app-store svg {
             fill: #ffffff !important;
@@ -650,10 +658,9 @@
         }
         
         .btn-app-store:hover {
-            background: linear-gradient(135deg, #5B96FF 0%, #2C78FA 100%);
-            box-shadow: 0 4px 16px rgba(44, 120, 250, 0.35),
-                        0 2px 8px rgba(44, 120, 250, 0.2);
-            transform: translateY(-1px);
+            filter: brightness(1.08);
+            transform: none;
+            box-shadow: none !important;
             color: #ffffff !important;
         }
         
@@ -673,18 +680,12 @@
         
         @media (max-width: 768px) {
             .btn-app-store {
-                padding: 20px 40px !important;
-                min-height: 60px !important;
-                font-size: 1.0625rem !important;
+                width: auto !important;
+                padding: 14px 16px !important;
+                min-height: 0 !important;
+                font-size: 16px !important;
             }
-        }
-        
-        @media (max-width: 480px) {
-            .btn-app-store {
-                padding: 18px 28px !important;
-                min-height: 56px !important;
-                font-size: 1rem !important;
-            }
+            .app-badges, .cta-buttons { flex-direction: row !important; }
         }
         
         /* Mobile Font Size Adjustments */
@@ -915,7 +916,7 @@
         "name": "Schede studio - Moreo",
         "alternateName": "Study Flashcards App",
         "url": "https://study-flashcards.app/it/",
-        "description": "Official landing page for Flashcards Maker - Study Cards, a flashcards app for iPhone and Android.",
+        "description": "Official landing page for Flashcards AI Study - Moreo, a flashcards app for iPhone and Android.",
         "publisher": {
             "@type": "Organization",
             "name": "omoot apps",
@@ -944,15 +945,15 @@
                 "name": "What is a flashcards app?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A flashcards app helps you memorize with question-and-answer cards, spaced repetition, and active recall. Flashcards Maker - Study Cards is a flashcards app for iPhone and Android with AI deck generation and science-backed review scheduling."
+                    "text": "A flashcards app helps you memorize with question-and-answer cards, spaced repetition, and active recall. Flashcards AI Study - Moreo is a flashcards app for iPhone and Android with AI deck generation and science-backed review scheduling."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is Flashcards Maker - Study Cards free?",
+                "name": "Is Flashcards AI Study - Moreo free?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Flashcards Maker - Study Cards is free to download on the App Store. Optional premium features are available as in-app purchases."
+                    "text": "Yes. Flashcards AI Study - Moreo is free to download on the App Store. Optional premium features are available as in-app purchases."
                 }
             },
             {
@@ -1051,8 +1052,8 @@
         <div class="app-hero-container">
             <div class="app-hero-content">
                 <div class="app-icon-large">
-                    <a href="https://apps.apple.com/it/app/flashcards-maker-study-cards/id6756944111" target="_blank" rel="noopener noreferrer" aria-label="Download Flashcards Maker - Study Cards on the App Store" style="display: block; text-decoration: none;">
-                        <img src="../assets/images/cards/optimized/logo.png" alt="Flashcards Maker - Study Cards Logo" class="app-logo" width="120" height="120" loading="eager" decoding="async">
+                    <a href="https://apps.apple.com/it/app/flashcards-maker-study-cards/id6756944111" target="_blank" rel="noopener noreferrer" aria-label="Download Flashcards AI Study - Moreo on the App Store" style="display: block; text-decoration: none;">
+                        <img src="../assets/images/cards/optimized/logo.png" alt="Flashcards AI Study - Moreo Logo" class="app-logo" width="120" height="120" loading="eager" decoding="async">
                     </a>
                 </div>
                 <p class="app-slogan">App di flashcard per iPhone e Android</p>
@@ -1290,7 +1291,7 @@
                     <div class="logo-circle"><img src="../assets/images/cards/optimized/logo.png" alt="" width="40" height="40"></div>
                     <span class="logo-text">Schede studio - Moreo</span>
                 </div>
-                                                                                                <div class="footer-lang">
+                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Lingua</label>
                     <select id="lang-select" class="lang-select" aria-label="Lingua">
                         <option value="/">EN</option>
@@ -1338,7 +1339,7 @@
                     <a href="mailto:dev.ohmyapp@gmail.com" class="footer-link">Contatti</a>
                 </div>
             </div>
-            <p class="footer-copyright">&copy; 2026 Flashcards Maker - Study Cards</p>
+            <p class="footer-copyright">&copy; 2026 Flashcards AI Study - Moreo</p>
         </div>
     </footer>
     </main>

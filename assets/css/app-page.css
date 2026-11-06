@@ -89,7 +89,7 @@
 
 .app-icon-large {
     font-size: 6rem;
-    margin-bottom: 40px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -644,7 +644,7 @@
 .logo-circle {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 12px;
     background: var(--gradient-primary);
     display: flex;
     align-items: center;
@@ -1137,7 +1137,6 @@ html.os-android .store-ios { display: none !important; }
     transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .study-card.is-flipped .study-inner { transform: rotateY(180deg); }
-.study-card.is-leave .study-inner { transform: translateX(-130%) rotate(-12deg); opacity: 0; transition: transform 0.45s ease, opacity 0.45s ease; }
 .study-face {
     position: absolute;
     inset: 0;
@@ -1165,7 +1164,27 @@ html.os-android .store-ios { display: none !important; }
 .study-text { margin: 0; font-size: clamp(26px, 3vw, 34px); line-height: 1.2; font-weight: 750; letter-spacing: -0.03em; color: #12141c; }
 .study-a .study-text { color: #fff; }
 .study-hint { margin: 8px 0 0; color: #8b90a5; font-size: 14px; }
-.study-rates { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; }
+.study-rates {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(18px);
+    pointer-events: none;
+    transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.35s ease, transform 0.4s ease;
+}
+.study-deck.is-rated .study-rates {
+    max-height: 92px;
+    margin-top: 14px;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+.study-card.is-press .study-inner { transform: scale(0.97); }
+.study-card.is-front.is-leave { opacity: 0; transition: opacity 0.35s ease; }
 .study-rates button {
     border: 1px solid #e4e6f2;
     background: #fff;

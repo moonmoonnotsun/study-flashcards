@@ -278,7 +278,7 @@ function buildLocalePage(code) {
 
   html = html.replace(/"inLanguage": "en-US"/, `"inLanguage": "${code}"`);
   html = html.replace(/"url": "https:\/\/study-flashcards\.app\/"/g, `"url": "${pageUrl}"`);
-  html = html.replace(/"name": "Flashcards Maker - Study Cards"/g, `"name": "${escapeJson(appName)}"`);
+  html = html.replace(/"name": "Flashcards AI Study - Moreo"/g, `"name": "${escapeJson(appName)}"`);
 
   const featureListJson = features.map((f) => `"${escapeJson(f.title)}"`).join(',\n            ');
   html = html.replace(/"featureList": \[[\s\S]*?\]/, `"featureList": [\n            ${featureListJson}\n        ]`);
@@ -366,7 +366,7 @@ function buildLocalePage(code) {
   html = html.replace(/<span class="btn-free">Free<\/span>/g, `<span class="btn-free">${o.free}</span>`);
   html = html.replace(/aria-label="Download on the App Store"/g, `aria-label="${o.downloadAppStore}"`);
 
-  html = html.replace(/<span class="logo-text">Flashcards Maker - Study Cards<\/span>/, `<span class="logo-text">${appName}</span>`);
+  html = html.replace(/<span class="logo-text">Flashcards AI Study - Moreo<\/span>/, `<span class="logo-text">${appName}</span>`);
   html = html.replace(/>Privacy<\/a>/, `>${o.privacy}</a>`);
   html = html.replace(/>Terms<\/a>/, `>${o.terms}</a>`);
   html = html.replace(/>Support<\/a>/, `>${o.support}</a>`);
