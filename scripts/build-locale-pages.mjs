@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { deckCopy } from '../locales/deck-copy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -13,6 +14,7 @@ const METADATA_PATH = path.join(ROOT, '../cards/locales/appStoreMetadata-flashca
 const PHRASES_PATH = path.join(ROOT, 'locales/landing-phrases.json');
 const TEMPLATE_PATH = path.join(ROOT, 'index.html');
 const APP_ID = '6756944111';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.ohmyapp.cards';
 const APP_SLUG = 'flashcards-maker-study-cards';
 const BASE_URL = 'https://study-flashcards.app';
 
@@ -354,6 +356,13 @@ function buildLocalePage(code) {
   );
 
   html = html.replace(/<span>Download on the App Store<\/span>/g, `<span>${o.downloadAppStore}</span>`);
+  html = html.replace(/https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.ohmyapp\.cards/g, PLAY_URL);
+  html = html.replace(/<span class="play-label">[^<]*<\/span>/g, `<span class="play-label">${o.downloadPlay}</span>`);
+  html = html.replace(/aria-label="Get it on Google Play"/g, `aria-label="${o.downloadPlay}"`);
+  html = html.replace(
+    /<script type="application\/json" id="deck-copy">[\s\S]*?<\/script>/,
+    `<script type="application/json" id="deck-copy">${JSON.stringify(deckCopy[code] || deckCopy.en)}</script>`,
+  );
   html = html.replace(/<span class="btn-free">Free<\/span>/g, `<span class="btn-free">${o.free}</span>`);
   html = html.replace(/aria-label="Download on the App Store"/g, `aria-label="${o.downloadAppStore}"`);
 
