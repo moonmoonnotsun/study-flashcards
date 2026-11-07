@@ -21,7 +21,7 @@
     margin-bottom: 120px;
     background: radial-gradient(ellipse at top, rgba(44, 120, 250, 0.15) 0%, transparent 50%),
                 radial-gradient(ellipse at bottom, rgba(91, 150, 255, 0.1) 0%, transparent 50%);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .app-hero::before {
@@ -67,6 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
     animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
@@ -1106,20 +1107,62 @@ html.os-android .store-ios { display: none !important; }
 .logo-circle { width: 40px; height: 40px; padding: 0; overflow: hidden; border-radius: 10px; }
 .logo-circle img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.study-deck { width: min(440px, 100%); margin: 0 auto; }
-.study-stack { position: relative; height: 300px; }
+.phone { position: relative; width: min(320px, 100%); margin: 0 auto; padding-bottom: 40px; }
+.phone-bezel {
+    background: linear-gradient(165deg, #f7f8fa 0%, #d7dbe3 22%, #c5cad3 58%, #eceff3 100%);
+    border-radius: 48px;
+    padding: 12px;
+    box-shadow: 0 28px 50px -28px rgba(16, 24, 48, 0.35), inset 0 0 0 1px rgba(255,255,255,0.9), inset 0 0 0 2px rgba(20, 28, 45, 0.08);
+}
+.phone-screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    border-radius: 36px;
+    overflow: hidden;
+    background: #0e1016;
+}
+.phone-island {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 6;
+    width: 96px;
+    height: 24px;
+    margin-left: -48px;
+    background: #000;
+    border-radius: 20px;
+}
+.phone-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7px;
+    z-index: 5;
+    width: 108px;
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.45);
+}
+.study-stack {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    perspective: 1400px;
+    overflow: hidden;
+}
 .study-card {
     position: absolute;
-    inset: 18px 28px 0;
+    inset: 0;
     border-radius: 28px;
     background: #fff;
-    box-shadow: 0 18px 40px rgba(20, 40, 80, 0.12);
-    border: 1px solid rgba(44, 120, 250, 0.12);
+    box-shadow: none;
+    border: 0;
 }
-.study-card.is-back { transform: translateY(-28px) scale(0.9); background: #d7e6ff; }
-.study-card.is-mid { transform: translateY(-14px) scale(0.95); background: #eef4ff; }
 .study-card.is-front {
-    inset: 18px 8px 0;
+    inset: 0;
     background: transparent;
     border: 0;
     box-shadow: none;
@@ -1129,77 +1172,139 @@ html.os-android .store-ios { display: none !important; }
     color: inherit;
     text-align: left;
 }
+.study-card.is-front { perspective: 1600px; transition: opacity 0.7s ease, transform 0.28s ease; }
 .study-inner {
     position: absolute;
     inset: 0;
     display: block;
     transform-style: preserve-3d;
-    transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.study-card.is-front.is-leave { opacity: 0; }
 .study-card.is-flipped .study-inner { transform: rotateY(180deg); }
+.study-card.is-instant .study-inner { transition: none; transform: none; }
 .study-face {
     position: absolute;
     inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    padding: 28px 26px;
-    border-radius: 28px;
+    display: block;
+    overflow: hidden;
+    border-radius: 0;
     background: #fff;
-    box-shadow: 0 22px 50px rgba(20, 40, 80, 0.16);
+    box-shadow: none;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     text-align: left;
 }
-.study-a { transform: rotateY(180deg); background: #2C78FA; color: #fff; }
+.study-a { transform: rotateY(180deg); background: #10141c; color: #fff; }
+.study-photo {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+.study-q .study-photo { inset: 0; }
+.study-a .study-photo { inset: 0; filter: brightness(0.42) saturate(0.85); }
+.study-body { position: absolute; left: 0; right: 0; }
+.study-q .study-body { top: auto; bottom: 0; padding: 18px 22px 20px; background: #fff; }
+.study-a .study-body { bottom: 86px; z-index: 1; padding: 0 22px; }
+.study-a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 48%;
+    background: linear-gradient(to top, rgba(0,0,0,0.78), transparent);
+    pointer-events: none;
+}
+.study-kicker,
+.study-text,
+.study-hint { display: block; }
 .study-kicker {
     margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #2C78FA;
 }
-.study-a .study-kicker { color: rgba(255,255,255,0.75); }
-.study-text { margin: 0; font-size: clamp(26px, 3vw, 34px); line-height: 1.2; font-weight: 750; letter-spacing: -0.03em; color: #12141c; }
-.study-a .study-text { color: #fff; }
-.study-hint { margin: 8px 0 0; color: #8b90a5; font-size: 14px; }
+.study-a .study-kicker { color: rgba(255,255,255,0.72); }
+.study-text { margin: 8px 0 0; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.22; font-weight: 750; letter-spacing: -0.03em; color: #12141c; }
+.study-a .study-text { color: #fff; font-size: 26px; }
+.study-hint { margin: 10px 0 0; color: #8b90a5; font-size: 14px; }
 .study-rates {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 12px;
+    z-index: 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-top: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(18px);
+    height: 60px;
+    margin: 0;
+    padding: 0;
     pointer-events: none;
-    transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.35s ease, transform 0.4s ease;
 }
-.study-deck.is-rated .study-rates {
-    max-height: 92px;
-    margin-top: 14px;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-}
-.study-card.is-press .study-inner { transform: scale(0.97); }
-.study-card.is-front.is-leave { opacity: 0; transition: opacity 0.35s ease; }
+.study-deck.is-rated .study-rates { pointer-events: auto; }
 .study-rates button {
-    border: 1px solid #e4e6f2;
-    background: #fff;
-    border-radius: 14px;
-    padding: 10px 4px;
+    --rate: #2C78FA;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: 2px solid #fff;
+    background: var(--rate);
+    border-radius: 18px;
+    padding: 8px 4px;
     cursor: pointer;
     font: inherit;
+    box-shadow: 0 10px 18px -8px rgba(8, 12, 24, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+    transition: opacity 0.5s ease, transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
 }
-.study-rates b { display: block; font-size: 14px; }
-.study-rates small { color: #8b90a5; font-size: 12px; }
-.study-rates button[data-rate="again"] b { color: #e25b5b; }
-.study-rates button[data-rate="hard"] b { color: #e0a03a; }
-.study-rates button[data-rate="good"] b { color: #2ea36a; }
-.study-rates button[data-rate="easy"] b { color: #2C78FA; }
-.study-rates button.is-on { transform: translateY(-2px); border-color: currentColor; box-shadow: 0 8px 16px rgba(20,40,80,0.08); }
+.study-rates button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--rate);
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    transition: transform 0.45s cubic-bezier(0.2, 0.85, 0.2, 1);
+    z-index: 0;
+}
+.study-deck.is-rated .study-rates button {
+    opacity: 1;
+    transform: none;
+}
+.study-deck.is-rated .study-rates button:nth-child(2) { transition-delay: 0.06s; }
+.study-deck.is-rated .study-rates button:nth-child(3) { transition-delay: 0.12s; }
+.study-deck.is-rated .study-rates button:nth-child(4) { transition-delay: 0.18s; }
+.study-rates b,
+.study-rates small { position: relative; z-index: 1; }
+.study-rates b { display: block; font-size: 13px; font-weight: 750; line-height: 1; letter-spacing: -0.02em; color: #fff; }
+.study-rates small { color: rgba(255, 255, 255, 0.9); font-size: 11px; font-weight: 600; line-height: 1; }
+.study-rates button[data-rate="again"] { --rate: #e25b5b; }
+.study-rates button[data-rate="hard"] { --rate: #e0a03a; }
+.study-rates button[data-rate="good"] { --rate: #2ea36a; }
+.study-rates button[data-rate="easy"] { --rate: #2C78FA; }
+.study-deck.is-rated.is-picked .study-rates button:not(.is-on) {
+    opacity: 0.38;
+    transform: scale(0.94);
+    transition-delay: 0s;
+}
+.study-deck.is-rated.is-picked .study-rates button.is-on {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 14px 22px -10px rgba(8, 12, 24, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    transition-delay: 0s;
+}
+.study-rates button.is-on::before { transform: scaleY(1); }
+.study-rates button.is-on b,
+.study-rates button.is-on small { color: #fff; }
 @media (prefers-reduced-motion: reduce) {
-    .study-inner, .study-card.is-leave .study-inner { transition: none; }
+    .study-inner, .study-card.is-front, .study-rates button, .study-rates button::before { transition: none; animation: none; }
 }

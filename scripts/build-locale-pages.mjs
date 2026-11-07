@@ -288,7 +288,8 @@ function buildLocalePage(code) {
     /<h1 class="app-title">[\s\S]*?<\/h1>/,
     `<h1 class="app-title">${o.heroH1Before}${titleSep(code, o.heroH1Before, o.heroH1Highlight)}<span class="highlight-flashcards">${o.heroH1Highlight}</span>${titleSep(code, o.heroH1Highlight, o.heroH1After)}${o.heroH1After}</h1>`,
   );
-  const taglineWithLink = `<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a> ${o.heroTagline}`;
+  const nameMark = `<span class="app-name">${appName}</span>`;
+  const taglineWithLink = `${nameMark} ${o.heroTagline}`;
   html = html.replace(/<p class="app-tagline">[\s\S]*?<\/p>/, `<p class="app-tagline">${taglineWithLink}</p>`);
 
   html = html.replace(
@@ -319,7 +320,7 @@ function buildLocalePage(code) {
   );
   html = html.replace(
     /<p class="section-subtitle about-copy">[\s\S]*?<\/p>/,
-    `<p class="section-subtitle about-copy">${o.sectionAboutCopy}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.sectionAboutCopyAfter}</p>`,
+    `<p class="section-subtitle about-copy">${o.sectionAboutCopy}${nameMark}${o.sectionAboutCopyAfter}</p>`,
   );
 
   html = html.replace(
@@ -332,7 +333,7 @@ function buildLocalePage(code) {
   );
 
   const faqPairs = [
-    [o.faq1Q, `${o.faq1A}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.faq1AAfter}`],
+    [o.faq1Q, `${o.faq1A}${nameMark}${o.faq1AAfter}`],
     [o.faq2Q, o.faq2A],
     [o.faq3Q, o.faq3A],
     [o.faq4Q, o.faq4A],
@@ -352,19 +353,19 @@ function buildLocalePage(code) {
   html = html.replace(/<h2 class="cta-title">[^<]*<\/h2>/, `<h2 class="cta-title">${o.ctaTitle}</h2>`);
   html = html.replace(
     /<p class="cta-description">[\s\S]*?<\/p>/,
-    `<p class="cta-description">${o.ctaDescription}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.ctaDescriptionAfter}</p>`,
+    `<p class="cta-description">${o.ctaDescription}${nameMark}${o.ctaDescriptionAfter}</p>`,
   );
 
-  html = html.replace(/<span>Download on the App Store<\/span>/g, `<span>${o.downloadAppStore}</span>`);
+  html = html.replace(/<span class="store-soft">Download on the<\/span>/g, `<span class="store-soft">${o.storeSoft}</span>`);
+  html = html.replace(/<span class="store-strong">App Store<\/span>/g, `<span class="store-strong">${o.storeStrong}</span>`);
   html = html.replace(/https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.ohmyapp\.cards/g, PLAY_URL);
-  html = html.replace(/<span class="play-label">[^<]*<\/span>/g, `<span class="play-label">${o.downloadPlay}</span>`);
-  html = html.replace(/aria-label="Get it on Google Play"/g, `aria-label="${o.downloadPlay}"`);
+  html = html.replace(/aria-label="Download on Google Play"/g, `aria-label="${o.storeSoft} Google Play"`);
   html = html.replace(
     /<script type="application\/json" id="deck-copy">[\s\S]*?<\/script>/,
     `<script type="application/json" id="deck-copy">${JSON.stringify(deckCopy[code] || deckCopy.en)}</script>`,
   );
-  html = html.replace(/<span class="btn-free">Free<\/span>/g, `<span class="btn-free">${o.free}</span>`);
-  html = html.replace(/aria-label="Download on the App Store"/g, `aria-label="${o.downloadAppStore}"`);
+  html = html.replace(/<span class="free">Free<\/span>/g, `<span class="free">${o.free}</span>`);
+  html = html.replace(/aria-label="Download on the App Store"/g, `aria-label="${o.storeSoft} ${o.storeStrong}"`);
 
   html = html.replace(/<span class="logo-text">Flashcards AI Study - Moreo<\/span>/, `<span class="logo-text">${appName}</span>`);
   html = html.replace(/>Privacy<\/a>/, `>${o.privacy}</a>`);

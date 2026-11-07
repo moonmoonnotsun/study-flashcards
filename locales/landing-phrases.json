@@ -6,7 +6,7 @@
     "metaTitle": "Flashcards Maker - Karteikarten | Spaced Repetition für iPhone und Android",
     "metaDescription": "Karteikarten-App für iPhone und Android - KI-Decks, Spaced Repetition und Active Recall. Lerne smarter für Prüfungen, Sprachen und alles, was du behalten willst.",
     "heroSlogan": "Karteikarten-App für iPhone und Android",
-    "heroH1Before": "Lerne smarter, behalte es ",
+    "heroH1Before": "Lerne <span class=\"highlight-flashcards\">smarter</span>, behalte es ",
     "heroH1Highlight": "für immer",
     "heroH1After": "",
     "heroTagline": "nutzt Spaced Repetition und Active Recall, damit du schneller lernst und länger behältst.",
@@ -27,7 +27,7 @@
     "faq1A": "Eine Karteikarten-App hilft beim Merken mit Frage-Antwort-Karten, Spaced Repetition und Active Recall. ",
     "faq1AAfter": " ergänzt das mit KI-Deck-Erstellung und intelligentem Wiederholungsplan auf dem iPhone und Android.",
     "faq2Q": "Ist diese Karteikarten-App kostenlos?",
-    "faq2A": "Ja - kostenloser Download im App Store. Premium-Funktionen sind optionale In-App-Käufe.",
+    "faq2A": "Ja - kostenloser Download im App Store und bei Google Play. Premium-Funktionen sind optionale In-App-Käufe.",
     "faq3Q": "Nutzt die App Spaced Repetition?",
     "faq3A": "Ja. Wiederholungen werden in optimalen Abständen geplant, um Wissen ins Langzeitgedächtnis zu überführen.",
     "faq4Q": "Kann KI Karteikarten erstellen?",
@@ -46,7 +46,9 @@
     "support": "Support",
     "contact": "Kontakt",
     "langSwitcherLabel": "Sprache",
-    "downloadPlay": "Bei Google Play holen"
+    "downloadPlay": "Bei Google Play holen",
+    "storeSoft": "Laden im",
+    "storeStrong": "App Store"
   },
   "fr": {
     "htmlLang": "fr",
@@ -55,7 +57,7 @@
     "metaTitle": "Flashcards Maker - Fiches | App répétition espacée iPhone et Android",
     "metaDescription": "App de fiches pour iPhone et Android - paquets IA, répétition espacée et rappel actif. Étudiez plus efficacement pour les examens, les langues et la mémorisation.",
     "heroSlogan": "App de fiches pour iPhone et Android",
-    "heroH1Before": "Apprenez plus intelligemment, retenez ",
+    "heroH1Before": "Apprenez plus <span class=\"highlight-flashcards\">intelligemment</span>, retenez ",
     "heroH1Highlight": "pour toujours",
     "heroH1After": "",
     "heroTagline": "utilise la répétition espacée et le rappel actif pour mémoriser plus vite et retenir plus longtemps.",
@@ -76,7 +78,7 @@
     "faq1A": "Une app de fiches aide à mémoriser avec des cartes question-réponse, la répétition espacée et le rappel actif. ",
     "faq1AAfter": " ajoute la génération de paquets par IA et la planification des révisions sur iPhone et Android.",
     "faq2Q": "Cette app de fiches est-elle gratuite ?",
-    "faq2A": "Oui - téléchargement gratuit sur l'App Store. Les fonctionnalités Premium sont des achats intégrés optionnels.",
+    "faq2A": "Oui - téléchargement gratuit sur l'App Store et Google Play. Les fonctionnalités Premium sont des achats intégrés optionnels.",
     "faq3Q": "Utilise-t-elle la répétition espacée ?",
     "faq3A": "Oui. Les révisions sont planifiées aux intervalles optimaux pour ancrer les connaissances en mémoire à long terme.",
     "faq4Q": "L'IA peut-elle générer des fiches ?",
@@ -95,7 +97,9 @@
     "support": "Assistance",
     "contact": "Contact",
     "langSwitcherLabel": "Langue",
-    "downloadPlay": "Disponible sur Google Play"
+    "downloadPlay": "Disponible sur Google Play",
+    "storeSoft": "Télécharger dans",
+    "storeStrong": "l'App Store"
   },
   "es": {
     "htmlLang": "es",
@@ -104,7 +108,7 @@
     "metaTitle": "Flashcards Maker - Fichas | App repetición espaciada iPhone y Android",
     "metaDescription": "App de fichas para iPhone y Android - mazos con IA, repetición espaciada y recuerdo activo. Estudia mejor para exámenes, idiomas y todo lo que necesites memorizar.",
     "heroSlogan": "App de fichas para iPhone y Android",
-    "heroH1Before": "Aprende mejor, recuerda ",
+    "heroH1Before": "Aprende <span class=\"highlight-flashcards\">mejor</span>, recuerda ",
     "heroH1Highlight": "para siempre",
     "heroH1After": "",
     "heroTagline": "usa repetición espaciada y recuerdo activo para memorizar más rápido y recordar más tiempo.",
@@ -125,7 +129,7 @@
     "faq1A": "Una app de fichas ayuda a memorizar con tarjetas de preguntas y respuestas, repetición espaciada y recuerdo activo. ",
     "faq1AAfter": " añade generación de mazos con IA y programación de repasos en iPhone y Android.",
     "faq2Q": "¿Esta app de fichas es gratuita?",
-    "faq2A": "Sí - descarga gratuita en el App Store. Las funciones Premium son compras opcionales dentro de la app.",
+    "faq2A": "Sí - descarga gratuita en el App Store y en Google Play. Las funciones Premium son compras opcionales dentro de la app.",
     "faq3Q": "¿Usa repetición espaciada?",
     "faq3A": "Sí. Los repasos se programan en intervalos óptimos para pasar la información a la memoria a largo plazo.",
     "faq4Q": "¿Puede la IA generar fichas?",
@@ -144,7 +148,9 @@
     "support": "Soporte",
     "contact": "Contacto",
     "langSwitcherLabel": "Idioma",
-    "downloadPlay": "Consíguela en Google Play"
+    "downloadPlay": "Consíguela en Google Play",
+    "storeSoft": "Consíguelo en el",
+    "storeStrong": "App Store"
   },
   "ru": {
     "htmlLang": "ru",
@@ -153,7 +159,7 @@
     "metaTitle": "Flashcards Maker - Карточки | Интервальное повторение iPhone и Android",
     "metaDescription": "Приложение с карточками для iPhone и Android - наборы с ИИ, интервальное повторение и активное припоминание. Учитесь эффективнее для экзаменов и языков.",
     "heroSlogan": "Приложение с карточками для iPhone и Android",
-    "heroH1Before": "Учитесь быстрее<br>Запоминайте ",
+    "heroH1Before": "Учитесь <span class=\"highlight-flashcards\">быстрее</span><br>Запоминайте ",
     "heroH1Highlight": "навсегда",
     "heroH1After": "",
     "heroTagline": "использует интервальное повторение и активное припоминание, чтобы вы запоминали быстрее и надолго.",
@@ -174,7 +180,7 @@
     "faq1A": "Приложение с карточками помогает запоминать с картами вопрос-ответ, интервальным повторением и активным припоминанием. ",
     "faq1AAfter": " добавляет создание наборов с ИИ и планирование повторений на iPhone и Android.",
     "faq2Q": "Это приложение бесплатное?",
-    "faq2A": "Да - бесплатная загрузка в App Store. Premium-функции - опциональные покупки в приложении.",
+    "faq2A": "Да - бесплатная загрузка в App Store и Google Play. Premium-функции - опциональные покупки в приложении.",
     "faq3Q": "Используется ли интервальное повторение?",
     "faq3A": "Да. Повторения планируются в оптимальные сроки для перевода информации в долговременную память.",
     "faq4Q": "Может ли ИИ создавать карточки?",
@@ -193,7 +199,9 @@
     "support": "Поддержка",
     "contact": "Контакты",
     "langSwitcherLabel": "Язык",
-    "downloadPlay": "Скачать в Google Play"
+    "downloadPlay": "Скачать в Google Play",
+    "storeSoft": "Скачайте в",
+    "storeStrong": "App Store"
   },
   "pl": {
     "htmlLang": "pl",
@@ -202,7 +210,7 @@
     "metaTitle": "Flashcards Maker - Fiszki | Powtarzanie interwałowe iPhone i Android",
     "metaDescription": "Aplikacja z fiszkami na iPhone i Android - talie AI, powtarzanie interwałowe i aktywne przypominanie. Ucz się mądrzej na egzaminy, języki i zapamiętywanie.",
     "heroSlogan": "Aplikacja z fiszkami na iPhone i Android",
-    "heroH1Before": "Ucz się mądrzej, pamiętaj ",
+    "heroH1Before": "Ucz się <span class=\"highlight-flashcards\">mądrzej</span>, pamiętaj ",
     "heroH1Highlight": "na zawsze",
     "heroH1After": "",
     "heroTagline": "wykorzystuje powtarzanie interwałowe i aktywne przypominanie, aby szybciej zapamiętywać i dłużej pamiętać.",
@@ -223,7 +231,7 @@
     "faq1A": "Aplikacja z fiszkami pomaga zapamiętywać kartami pytanie-odpowiedź, powtarzaniem interwałowym i aktywnym przypominaniem. ",
     "faq1AAfter": " dodaje generowanie talii AI i planowanie powtórek na iPhone i Android.",
     "faq2Q": "Czy ta aplikacja jest darmowa?",
-    "faq2A": "Tak - bezpłatne pobranie w App Store. Funkcje Premium to opcjonalne zakupy w aplikacji.",
+    "faq2A": "Tak - bezpłatne pobranie w App Store i Google Play. Funkcje Premium to opcjonalne zakupy w aplikacji.",
     "faq3Q": "Czy używa powtarzania interwałowego?",
     "faq3A": "Tak. Powtórki są planowane w optymalnych odstępach, by przenieść wiedzę do pamięci długotrwałej.",
     "faq4Q": "Czy AI może tworzyć fiszki?",
@@ -242,7 +250,9 @@
     "support": "Pomoc",
     "contact": "Kontakt",
     "langSwitcherLabel": "Język",
-    "downloadPlay": "Pobierz z Google Play"
+    "downloadPlay": "Pobierz z Google Play",
+    "storeSoft": "Pobierz w",
+    "storeStrong": "App Store"
   },
   "ja": {
     "htmlLang": "ja",
@@ -251,7 +261,7 @@
     "metaTitle": "Flashcards Maker - 単語帳 | 間隔反復フラッシュカードアプリ（iPhoneとAndroid）",
     "metaDescription": "iPhone と Android向けフラッシュカードアプリ - AIデッキ、間隔反復、アクティブリコール。試験、語学、暗記に賢く学べます。",
     "heroSlogan": "iPhone と Android向けフラッシュカードアプリ",
-    "heroH1Before": "もっと賢く学び、",
+    "heroH1Before": "もっと<span class=\"highlight-flashcards\">賢く</span>学び、",
     "heroH1Highlight": "ずっと",
     "heroH1After": "覚える",
     "heroTagline": "は間隔反復とアクティブリコールで、より速く覚え、より長く記憶します。",
@@ -272,7 +282,7 @@
     "faq1A": "Q&Aカード、間隔反復、アクティブリコールで暗記を支援するアプリです。",
     "faq1AAfter": " はAIデッキ生成と復習スケジュールをiPhone と Androidで提供します。",
     "faq2Q": "このアプリは無料ですか？",
-    "faq2A": "はい - App Storeで無料ダウンロード。プレミアム機能は任意の課金です。",
+    "faq2A": "はい - App StoreとGoogle Playで無料ダウンロード。プレミアム機能は任意の課金です。",
     "faq3Q": "間隔反復を使いますか？",
     "faq3A": "はい。最適な間隔で復習をスケジュールし、長期記憶へ定着させます。",
     "faq4Q": "AIでカードを作れますか？",
@@ -291,7 +301,9 @@
     "support": "サポート",
     "contact": "お問い合わせ",
     "langSwitcherLabel": "言語",
-    "downloadPlay": "Google Play で手に入れよう"
+    "downloadPlay": "Google Play で手に入れよう",
+    "storeSoft": "ダウンロード",
+    "storeStrong": "App Store"
   },
   "pt-BR": {
     "htmlLang": "pt-BR",
@@ -300,7 +312,7 @@
     "metaTitle": "Flashcards Maker - Fichas | Repetição espaçada para iPhone e Android",
     "metaDescription": "App de flashcards para iPhone e Android - baralhos com IA, repetição espaçada e recall ativo. Estude melhor para provas, idiomas e memorização.",
     "heroSlogan": "App de flashcards para iPhone e Android",
-    "heroH1Before": "Aprenda melhor, lembre ",
+    "heroH1Before": "Aprenda <span class=\"highlight-flashcards\">melhor</span>, lembre ",
     "heroH1Highlight": "para sempre",
     "heroH1After": "",
     "heroTagline": "usa repetição espaçada e recall ativo para memorizar mais rápido e lembrar por mais tempo.",
@@ -321,7 +333,7 @@
     "faq1A": "Um app de flashcards ajuda a memorizar com cartões de pergunta e resposta, repetição espaçada e recall ativo. ",
     "faq1AAfter": " adiciona geração de baralhos com IA e agendamento de revisões no iPhone e Android.",
     "faq2Q": "Este app de flashcards é gratuito?",
-    "faq2A": "Sim - download gratuito na App Store. Recursos Premium são compras opcionais no app.",
+    "faq2A": "Sim - download gratuito na App Store e no Google Play. Recursos Premium são compras opcionais no app.",
     "faq3Q": "Usa repetição espaçada?",
     "faq3A": "Sim. As revisões são agendadas em intervalos ideais para fixar na memória de longo prazo.",
     "faq4Q": "A IA pode gerar flashcards?",
@@ -340,7 +352,9 @@
     "support": "Suporte",
     "contact": "Contato",
     "langSwitcherLabel": "Idioma",
-    "downloadPlay": "Disponível no Google Play"
+    "downloadPlay": "Disponível no Google Play",
+    "storeSoft": "Baixar na",
+    "storeStrong": "App Store"
   },
   "zh-Hans": {
     "htmlLang": "zh-Hans",
@@ -349,7 +363,7 @@
     "metaTitle": "Flashcards Maker - 闪卡 | 间隔重复学习应用 iPhone 和 Android",
     "metaDescription": "iPhone 和 Android 闪卡应用 - AI 卡组、间隔重复与主动回忆。更高效备考、学语言、记忆任何知识。",
     "heroSlogan": "iPhone 和 Android 闪卡应用",
-    "heroH1Before": "学得更聪明，记得",
+    "heroH1Before": "学得<span class=\"highlight-flashcards\">更聪明</span>，记得",
     "heroH1Highlight": "更长久",
     "heroH1After": "",
     "heroTagline": "采用间隔重复与主动回忆，帮助你更快记忆、更长久保留。",
@@ -370,7 +384,7 @@
     "faq1A": "闪卡应用通过问答卡片、间隔重复和主动回忆帮助记忆。",
     "faq1AAfter": " 在 iPhone 和 Android 上提供 AI 卡组生成与复习计划。",
     "faq2Q": "这款闪卡应用免费吗？",
-    "faq2A": "是的 - App Store 免费下载。高级功能为可选内购。",
+    "faq2A": "是的 - App Store 和 Google Play 免费下载。高级功能为可选内购。",
     "faq3Q": "是否使用间隔重复？",
     "faq3A": "是的。在最佳间隔安排复习，将知识转入长期记忆。",
     "faq4Q": "AI 能生成闪卡吗？",
@@ -389,7 +403,9 @@
     "support": "支持",
     "contact": "联系",
     "langSwitcherLabel": "语言",
-    "downloadPlay": "在 Google Play 获取"
+    "downloadPlay": "在 Google Play 获取",
+    "storeSoft": "下载",
+    "storeStrong": "App Store"
   },
   "ko": {
     "htmlLang": "ko",
@@ -398,7 +414,7 @@
     "metaTitle": "Flashcards Maker - 플래시카드 | 간격 반복 학습 앱 iPhone 과 Android",
     "metaDescription": "iPhone 과 Android용 플래시카드 앱 - AI 덱, 간격 반복, 능동 회상. 시험, 언어, 암기를 더 똑똑하게 공부하세요.",
     "heroSlogan": "iPhone 과 Android용 플래시카드 앱",
-    "heroH1Before": "더 똑똑하게 배우고, ",
+    "heroH1Before": "더 <span class=\"highlight-flashcards\">똑똑하게</span> 배우고, ",
     "heroH1Highlight": "오래",
     "heroH1After": " 기억하세요",
     "heroTagline": "는 간격 반복과 능동 회상으로 더 빠르게 암기하고 더 오래 기억합니다.",
@@ -419,7 +435,7 @@
     "faq1A": "Q&A 카드, 간격 반복, 능동 회상으로 암기를 돕는 앱입니다. ",
     "faq1AAfter": " 는 iPhone 과 Android에서 AI 덱 생성과 복습 일정을 제공합니다.",
     "faq2Q": "이 앱은 무료인가요?",
-    "faq2A": "네 - App Store에서 무료 다운로드. 프리미엄 기능은 선택적 인앱 구매입니다.",
+    "faq2A": "네 - App Store와 Google Play에서 무료 다운로드. 프리미엄 기능은 선택적 인앱 구매입니다.",
     "faq3Q": "간격 반복을 사용하나요?",
     "faq3A": "네. 최적의 간격으로 복습을 예약해 장기 기억으로 옮깁니다.",
     "faq4Q": "AI가 플래시카드를 만들 수 있나요?",
@@ -438,7 +454,9 @@
     "support": "지원",
     "contact": "문의",
     "langSwitcherLabel": "언어",
-    "downloadPlay": "Google Play에서 받기"
+    "downloadPlay": "Google Play에서 받기",
+    "storeSoft": "다운로드",
+    "storeStrong": "App Store"
   },
   "it": {
     "htmlLang": "it",
@@ -447,7 +465,7 @@
     "metaTitle": "Flashcards Maker - Carte | Ripetizione dilazionata iPhone e Android",
     "metaDescription": "App di flashcard per iPhone e Android - mazzi IA, ripetizione dilazionata e richiamo attivo. Studia meglio per esami, lingue e memorizzazione.",
     "heroSlogan": "App di flashcard per iPhone e Android",
-    "heroH1Before": "Impara in modo più intelligente, ricorda ",
+    "heroH1Before": "Impara in modo più <span class=\"highlight-flashcards\">intelligente</span>, ricorda ",
     "heroH1Highlight": "per sempre",
     "heroH1After": "",
     "heroTagline": "usa ripetizione dilazionata e richiamo attivo per memorizzare più velocemente e ricordare più a lungo.",
@@ -468,7 +486,7 @@
     "faq1A": "Un'app di flashcard aiuta a memorizzare con carte domanda-risposta, ripetizione dilazionata e richiamo attivo. ",
     "faq1AAfter": " aggiunge generazione mazzi IA e pianificazione revisioni su iPhone e Android.",
     "faq2Q": "Questa app è gratuita?",
-    "faq2A": "Sì - download gratuito su App Store. Le funzioni Premium sono acquisti opzionali in-app.",
+    "faq2A": "Sì - download gratuito su App Store e Google Play. Le funzioni Premium sono acquisti opzionali in-app.",
     "faq3Q": "Usa la ripetizione dilazionata?",
     "faq3A": "Sì. Le revisioni sono programmate a intervalli ottimali per fissare nella memoria a lungo termine.",
     "faq4Q": "L'IA può generare flashcard?",
@@ -487,7 +505,9 @@
     "support": "Assistenza",
     "contact": "Contatti",
     "langSwitcherLabel": "Lingua",
-    "downloadPlay": "Disponibile su Google Play"
+    "downloadPlay": "Disponibile su Google Play",
+    "storeSoft": "Scarica su",
+    "storeStrong": "App Store"
   },
   "nl": {
     "htmlLang": "nl",
@@ -496,7 +516,7 @@
     "metaTitle": "Flashcards Maker - Kaarten | Spaced repetition app iPhone en Android",
     "metaDescription": "Flashcards-app voor iPhone en Android - AI-decks, spaced repetition en active recall. Studeer slimmer voor examens, talen en alles wat je wilt onthouden.",
     "heroSlogan": "Flashcards-app voor iPhone en Android",
-    "heroH1Before": "Leer slimmer, onthoud ",
+    "heroH1Before": "Leer <span class=\"highlight-flashcards\">slimmer</span>, onthoud ",
     "heroH1Highlight": "voor altijd",
     "heroH1After": "",
     "heroTagline": "gebruikt spaced repetition en active recall om sneller te onthouden en langer te bewaren.",
@@ -517,7 +537,7 @@
     "faq1A": "Een flashcards-app helpt onthouden met vraag-en-antwoordkaarten, spaced repetition en active recall. ",
     "faq1AAfter": " voegt AI-deckgeneratie en reviewplanning toe op iPhone en Android.",
     "faq2Q": "Is deze flashcards-app gratis?",
-    "faq2A": "Ja - gratis download in de App Store. Premiumfuncties zijn optionele in-app aankopen.",
+    "faq2A": "Ja - gratis download in de App Store en op Google Play. Premiumfuncties zijn optionele in-app aankopen.",
     "faq3Q": "Gebruikt het spaced repetition?",
     "faq3A": "Ja. Reviews worden op optimale momenten gepland om informatie in het langetermijngeheugen te brengen.",
     "faq4Q": "Kan AI flashcards genereren?",
@@ -536,7 +556,9 @@
     "support": "Support",
     "contact": "Contact",
     "langSwitcherLabel": "Taal",
-    "downloadPlay": "Downloaden op Google Play"
+    "downloadPlay": "Downloaden op Google Play",
+    "storeSoft": "Download in de",
+    "storeStrong": "App Store"
   },
   "tr": {
     "htmlLang": "tr",
@@ -545,7 +567,7 @@
     "metaTitle": "Flashcards Maker - Kartlar | Aralıklı tekrar uygulaması iPhone ve Android",
     "metaDescription": "iPhone ve Android için flashcard uygulaması - yapay zeka desteleri, aralıklı tekrar ve aktif hatırlama. Sınavlar, diller ve ezber için daha akıllıca çalışın.",
     "heroSlogan": "iPhone ve Android için flashcard uygulaması",
-    "heroH1Before": "Daha akıllıca öğrenin, ",
+    "heroH1Before": "Daha <span class=\"highlight-flashcards\">akıllıca</span> öğrenin, ",
     "heroH1Highlight": "sonsuza dek",
     "heroH1After": " hatırlayın",
     "heroTagline": "aralıklı tekrar ve aktif hatırlama ile daha hızlı ezberlemenize ve daha uzun hatırlamanıza yardımcı olur.",
@@ -566,7 +588,7 @@
     "faq1A": "Soru-cevap kartları, aralıklı tekrar ve aktif hatırlama ile ezberlemenize yardımcı olur. ",
     "faq1AAfter": ", iPhone ve Android'da yapay zeka deste oluşturma ve tekrar planlaması ekler.",
     "faq2Q": "Bu flashcard uygulaması ücretsiz mi?",
-    "faq2A": "Evet - App Store'da ücretsiz indirin. Premium özellikler isteğe bağlı uygulama içi satın alımlardır.",
+    "faq2A": "Evet - App Store ve Google Play'de ücretsiz indirin. Premium özellikler isteğe bağlı uygulama içi satın alımlardır.",
     "faq3Q": "Aralıklı tekrar kullanıyor mu?",
     "faq3A": "Evet. Tekrarlar, bilgiyi uzun süreli belleğe taşımak için en uygun aralıklarda planlanır.",
     "faq4Q": "Yapay zeka flashcard oluşturabilir mi?",
@@ -585,7 +607,9 @@
     "support": "Destek",
     "contact": "İletişim",
     "langSwitcherLabel": "Dil",
-    "downloadPlay": "Google Play'den indir"
+    "downloadPlay": "Google Play'den indir",
+    "storeSoft": "İndir",
+    "storeStrong": "App Store"
   },
   "uk": {
     "htmlLang": "uk",
@@ -594,7 +618,7 @@
     "metaTitle": "Flashcards Maker - Картки | Інтервальне повторення iPhone і Android",
     "metaDescription": "Додаток з картками для iPhone і Android - набори зі ШІ, інтервальне повторення та активне пригадування. Вчіться ефективніше для іспитів і мов.",
     "heroSlogan": "Додаток з картками для iPhone і Android",
-    "heroH1Before": "Вчіться розумніше, пам'ятайте ",
+    "heroH1Before": "Вчіться <span class=\"highlight-flashcards\">розумніше</span>, пам'ятайте ",
     "heroH1Highlight": "назавжди",
     "heroH1After": "",
     "heroTagline": "використовує інтервальне повторення та активне пригадування, щоб ви запам'ятовували швидше й надовго.",
@@ -615,7 +639,7 @@
     "faq1A": "Додаток з картками допомагає запам'ятовувати картками питання-відповідь, інтервальним повторенням і активним пригадуванням. ",
     "faq1AAfter": " додає створення наборів зі ШІ та планування повторень на iPhone і Android.",
     "faq2Q": "Цей додаток безкоштовний?",
-    "faq2A": "Так - безкоштовне завантаження в App Store. Premium-функції - опціональні покупки в додатку.",
+    "faq2A": "Так - безкоштовне завантаження в App Store і Google Play. Premium-функції - опціональні покупки в додатку.",
     "faq3Q": "Чи використовується інтервальне повторення?",
     "faq3A": "Так. Повторення плануються в оптимальні терміни для переведення інформації в довгострокову пам'ять.",
     "faq4Q": "Чи може ШІ створювати картки?",
@@ -634,7 +658,9 @@
     "support": "Підтримка",
     "contact": "Контакти",
     "langSwitcherLabel": "Мова",
-    "downloadPlay": "Завантажити в Google Play"
+    "downloadPlay": "Завантажити в Google Play",
+    "storeSoft": "Завантажте з",
+    "storeStrong": "App Store"
   },
   "ar": {
     "htmlLang": "ar",
@@ -644,7 +670,7 @@
     "metaTitle": "Flashcards Maker - بطاقات | تكرار متباعد لتطبيق iPhone و Android",
     "metaDescription": "تطبيق بطاقات لـ iPhone و Android - مجموعات بالذكاء الاصطناعي، تكرار متباعد واسترجاع نشط. ادرس بذكاء للامتحانات واللغات والحفظ.",
     "heroSlogan": "تطبيق بطاقات لـ iPhone و Android",
-    "heroH1Before": "تعلّم بذكاء، وتذكّر ",
+    "heroH1Before": "تعلّم <span class=\"highlight-flashcards\">بذكاء</span>، وتذكّر ",
     "heroH1Highlight": "للأبد",
     "heroH1After": "",
     "heroTagline": "يستخدم التكرار المتباعد والاسترجاع النشط لمساعدتك على الحفظ أسرع والتذكر أطول.",
@@ -665,7 +691,7 @@
     "faq1A": "يساعد على الحفظ ببطاقات سؤال وجواب وتكرار متباعد واسترجاع نشط. ",
     "faq1AAfter": " يضيف إنشاء مجموعات بالذكاء الاصطناعي وجدولة المراجعات على iPhone و Android.",
     "faq2Q": "هل هذا التطبيق مجاني؟",
-    "faq2A": "نعم - تنزيل مجاني من App Store. ميزات Premium اختيارية كمشتريات داخل التطبيق.",
+    "faq2A": "نعم - تنزيل مجاني من App Store وGoogle Play. ميزات Premium اختيارية كمشتريات داخل التطبيق.",
     "faq3Q": "هل يستخدم التكرار المتباعد؟",
     "faq3A": "نعم. تُجدول المراجعات في فترات مثالية لنقل المعلومات إلى الذاكرة طويلة المدى.",
     "faq4Q": "هل يمكن للذكاء الاصطناعي إنشاء بطاقات؟",
@@ -684,7 +710,9 @@
     "support": "الدعم",
     "contact": "اتصل بنا",
     "langSwitcherLabel": "اللغة",
-    "downloadPlay": "احصل عليه من Google Play"
+    "downloadPlay": "احصل عليه من Google Play",
+    "storeSoft": "تنزيل من",
+    "storeStrong": "App Store"
   },
   "sv": {
     "htmlLang": "sv",
@@ -693,7 +721,7 @@
     "metaTitle": "Flashcards Maker - Studiekort | Spaced repetition-app iPhone och Android",
     "metaDescription": "Flashcards-app för iPhone och Android - AI-kortlekar, spaced repetition och active recall. Plugga smartare inför prov, språk och allt du vill memorera.",
     "heroSlogan": "Flashcards-app för iPhone och Android",
-    "heroH1Before": "Plugga smartare, kom ihåg ",
+    "heroH1Before": "Plugga <span class=\"highlight-flashcards\">smartare</span>, kom ihåg ",
     "heroH1Highlight": "för alltid",
     "heroH1After": "",
     "heroTagline": "använder spaced repetition och active recall för snabbare memorering och längre minne.",
@@ -714,7 +742,7 @@
     "faq1A": "En flashcards-app hjälper dig memorera med fråge- och svarskort, spaced repetition och active recall. ",
     "faq1AAfter": " lägger till AI-kortleksgenerering och repetitionsschema på iPhone och Android.",
     "faq2Q": "Är denna flashcards-app gratis?",
-    "faq2A": "Ja - gratis nedladdning i App Store. Premiumfunktioner är valfria köp i appen.",
+    "faq2A": "Ja - gratis nedladdning i App Store och på Google Play. Premiumfunktioner är valfria köp i appen.",
     "faq3Q": "Använder den spaced repetition?",
     "faq3A": "Ja. Repetitioner schemaläggs med optimala intervall för att flytta information till långtidsminnet.",
     "faq4Q": "Kan AI generera flashcards?",
@@ -733,7 +761,9 @@
     "support": "Support",
     "contact": "Kontakt",
     "langSwitcherLabel": "Språk",
-    "downloadPlay": "Hämta på Google Play"
+    "downloadPlay": "Hämta på Google Play",
+    "storeSoft": "Ladda ner i",
+    "storeStrong": "App Store"
   },
   "zh-Hant": {
     "htmlLang": "zh-Hant",
@@ -742,7 +772,7 @@
     "metaTitle": "Flashcards Maker - 閃卡 | 間隔重複學習應用 iPhone 和 Android",
     "metaDescription": "iPhone 和 Android 閃卡應用 - AI 卡組、間隔重複與主動回憶。更高效備考、學語言、記憶任何知識。",
     "heroSlogan": "iPhone 和 Android 閃卡應用",
-    "heroH1Before": "學得更聰明，記得",
+    "heroH1Before": "學得<span class=\"highlight-flashcards\">更聰明</span>，記得",
     "heroH1Highlight": "更長久",
     "heroH1After": "",
     "heroTagline": "採用間隔重複與主動回憶，幫助你更快記憶、更長久保留。",
@@ -763,7 +793,7 @@
     "faq1A": "閃卡應用透過問答卡片、間隔重複和主動回憶幫助記憶。",
     "faq1AAfter": " 在 iPhone 和 Android 上提供 AI 卡組生成與複習計畫。",
     "faq2Q": "這款閃卡應用免費嗎？",
-    "faq2A": "是的 - App Store 免費下載。進階功能為選購內購。",
+    "faq2A": "是的 - App Store 與 Google Play 免費下載。進階功能為選購內購。",
     "faq3Q": "是否使用間隔重複？",
     "faq3A": "是的。在最佳間隔安排複習，將知識轉入長期記憶。",
     "faq4Q": "AI 能生成閃卡嗎？",
@@ -782,7 +812,9 @@
     "support": "支援",
     "contact": "聯絡",
     "langSwitcherLabel": "語言",
-    "downloadPlay": "在 Google Play 取得"
+    "downloadPlay": "在 Google Play 取得",
+    "storeSoft": "下載",
+    "storeStrong": "App Store"
   },
   "pt-PT": {
     "htmlLang": "pt-PT",
@@ -791,7 +823,7 @@
     "metaTitle": "Flashcards Maker - Fichas | Repetição espaçada para iPhone e Android",
     "metaDescription": "App de flashcards para iPhone e Android - baralhos com IA, repetição espaçada e recall ativo. Estude melhor para exames, idiomas e memorização.",
     "heroSlogan": "App de flashcards para iPhone e Android",
-    "heroH1Before": "Aprenda melhor, lembre-se ",
+    "heroH1Before": "Aprenda <span class=\"highlight-flashcards\">melhor</span>, lembre-se ",
     "heroH1Highlight": "para sempre",
     "heroH1After": "",
     "heroTagline": "usa repetição espaçada e recall ativo para memorizar mais depressa e recordar durante mais tempo.",
@@ -812,7 +844,7 @@
     "faq1A": "Uma app de flashcards ajuda a memorizar com cartões de pergunta e resposta, repetição espaçada e recall ativo. ",
     "faq1AAfter": " acrescenta geração de baralhos com IA e agendamento de revisões no iPhone e Android.",
     "faq2Q": "Esta app de flashcards é gratuita?",
-    "faq2A": "Sim - transferência gratuita na App Store. Funcionalidades Premium são compras opcionais na app.",
+    "faq2A": "Sim - transferência gratuita na App Store e no Google Play. Funcionalidades Premium são compras opcionais na app.",
     "faq3Q": "Usa repetição espaçada?",
     "faq3A": "Sim. As revisões são agendadas em intervalos ideais para fixar na memória a longo prazo.",
     "faq4Q": "A IA pode gerar flashcards?",
@@ -831,7 +863,9 @@
     "support": "Apoio",
     "contact": "Contacto",
     "langSwitcherLabel": "Idioma",
-    "downloadPlay": "Disponível no Google Play"
+    "downloadPlay": "Disponível no Google Play",
+    "storeSoft": "Descarregar na",
+    "storeStrong": "App Store"
   },
   "vi": {
     "htmlLang": "vi",
@@ -840,7 +874,7 @@
     "metaTitle": "Flashcards Maker - Thẻ ghi nhớ | Spaced repetition iPhone và Android",
     "metaDescription": "Ứng dụng flashcard cho iPhone và Android - bộ thẻ AI, spaced repetition và active recall. Học thông minh hơn cho thi cử, ngôn ngữ và ghi nhớ.",
     "heroSlogan": "Ứng dụng flashcard cho iPhone và Android",
-    "heroH1Before": "Học thông minh hơn, nhớ ",
+    "heroH1Before": "Học <span class=\"highlight-flashcards\">thông minh hơn</span>, nhớ ",
     "heroH1Highlight": "mãi mãi",
     "heroH1After": "",
     "heroTagline": "dùng spaced repetition và active recall giúp bạn ghi nhớ nhanh hơn và lâu hơn.",
@@ -861,7 +895,7 @@
     "faq1A": "Ứng dụng flashcard giúp ghi nhớ bằng thẻ hỏi-đáp, spaced repetition và active recall. ",
     "faq1AAfter": " bổ sung tạo bộ thẻ AI và lên lịch ôn tập trên iPhone và Android.",
     "faq2Q": "Ứng dụng flashcard này có miễn phí không?",
-    "faq2A": "Có - tải miễn phí trên App Store. Tính năng Premium là mua trong ứng dụng tùy chọn.",
+    "faq2A": "Có - tải miễn phí trên App Store và Google Play. Tính năng Premium là mua trong ứng dụng tùy chọn.",
     "faq3Q": "Có dùng spaced repetition không?",
     "faq3A": "Có. Ôn tập được lên lịch ở khoảng thời gian tối ưu để chuyển thông tin vào trí nhớ dài hạn.",
     "faq4Q": "AI có thể tạo flashcard không?",
@@ -880,7 +914,9 @@
     "support": "Hỗ trợ",
     "contact": "Liên hệ",
     "langSwitcherLabel": "Ngôn ngữ",
-    "downloadPlay": "Tải trên Google Play"
+    "downloadPlay": "Tải trên Google Play",
+    "storeSoft": "Tải về trên",
+    "storeStrong": "App Store"
   },
   "id": {
     "htmlLang": "id",
@@ -889,7 +925,7 @@
     "metaTitle": "Flashcards Maker - Kartu | Spaced repetition untuk iPhone dan Android",
     "metaDescription": "Aplikasi flashcard untuk iPhone dan Android - deck AI, spaced repetition dan active recall. Belajar lebih cerdas untuk ujian, bahasa, dan hafalan.",
     "heroSlogan": "Aplikasi flashcard untuk iPhone dan Android",
-    "heroH1Before": "Belajar lebih cerdas, ingat ",
+    "heroH1Before": "Belajar lebih <span class=\"highlight-flashcards\">cerdas</span>, ingat ",
     "heroH1Highlight": "selamanya",
     "heroH1After": "",
     "heroTagline": "menggunakan spaced repetition dan active recall agar hafal lebih cepat dan ingat lebih lama.",
@@ -910,7 +946,7 @@
     "faq1A": "Aplikasi flashcard membantu menghafal dengan kartu tanya-jawab, spaced repetition, dan active recall. ",
     "faq1AAfter": " menambahkan pembuatan deck AI dan penjadwalan ulasan di iPhone dan Android.",
     "faq2Q": "Apakah aplikasi flashcard ini gratis?",
-    "faq2A": "Ya - unduh gratis di App Store. Fitur Premium adalah pembelian dalam aplikasi opsional.",
+    "faq2A": "Ya - unduh gratis di App Store dan Google Play. Fitur Premium adalah pembelian dalam aplikasi opsional.",
     "faq3Q": "Apakah menggunakan spaced repetition?",
     "faq3A": "Ya. Ulasan dijadwalkan pada interval optimal untuk memindahkan informasi ke memori jangka panjang.",
     "faq4Q": "Bisakah AI membuat flashcard?",
@@ -929,7 +965,9 @@
     "support": "Dukungan",
     "contact": "Kontak",
     "langSwitcherLabel": "Bahasa",
-    "downloadPlay": "Dapatkan di Google Play"
+    "downloadPlay": "Dapatkan di Google Play",
+    "storeSoft": "Unduh di",
+    "storeStrong": "App Store"
   },
   "th": {
     "htmlLang": "th",
@@ -938,7 +976,7 @@
     "metaTitle": "Flashcards Maker - บัตรคำ | Spaced repetition สำหรับ iPhone และ Android",
     "metaDescription": "แอป flashcard สำหรับ iPhone และ Android - เด็ค AI, spaced repetition และ active recall เรียนอย่างฉลาดขึ้นสำหรับสอบ ภาษา และการจดจำ",
     "heroSlogan": "แอป flashcard สำหรับ iPhone และ Android",
-    "heroH1Before": "เรียนอย่างฉลาดขึ้น จำได้",
+    "heroH1Before": "เรียนอย่าง<span class=\"highlight-flashcards\">ฉลาดขึ้น</span> จำได้",
     "heroH1Highlight": "ยาวนาน",
     "heroH1After": "",
     "heroTagline": "ใช้ spaced repetition และ active recall ช่วยให้จำได้เร็วและจำได้นานขึ้น",
@@ -959,7 +997,7 @@
     "faq1A": "แอป flashcard ช่วยจดจำด้วยการ์ดถาม-ตอบ spaced repetition และ active recall ",
     "faq1AAfter": " เพิ่มการสร้างเด็ค AI และการกำหนดเวลาทบทวนบน iPhone และ Android",
     "faq2Q": "แอป flashcard นี้ฟรีหรือไม่?",
-    "faq2A": "ใช่ - ดาวน์โหลดฟรีบน App Store ฟีเจอร์ Premium เป็นตัวเลือกซื้อในแอป",
+    "faq2A": "ใช่ - ดาวน์โหลดฟรีบน App Store และ Google Play ฟีเจอร์ Premium เป็นตัวเลือกซื้อในแอป",
     "faq3Q": "ใช้ spaced repetition หรือไม่?",
     "faq3A": "ใช่ กำหนดเวลาทบทวนในช่วงที่เหมาะสมเพื่อย้ายข้อมูลไปยังความจำระยะยาว",
     "faq4Q": "AI สร้าง flashcard ได้หรือไม่?",
@@ -978,7 +1016,9 @@
     "support": "การสนับสนุน",
     "contact": "ติดต่อ",
     "langSwitcherLabel": "ภาษา",
-    "downloadPlay": "ดาวน์โหลดบน Google Play"
+    "downloadPlay": "ดาวน์โหลดบน Google Play",
+    "storeSoft": "ดาวน์โหลดบน",
+    "storeStrong": "App Store"
   },
   "cs": {
     "htmlLang": "cs",
@@ -987,7 +1027,7 @@
     "metaTitle": "Flashcards Maker - Kartičky | Spaced repetition pro iPhone a Android",
     "metaDescription": "Aplikace s kartičkami pro iPhone a Android - balíčky AI, spaced repetition a active recall. Studujte chytřeji na zkoušky, jazyky a zapamatování.",
     "heroSlogan": "Aplikace s kartičkami pro iPhone a Android",
-    "heroH1Before": "Studujte chytřeji, pamatujte si ",
+    "heroH1Before": "Studujte <span class=\"highlight-flashcards\">chytřeji</span>, pamatujte si ",
     "heroH1Highlight": "navždy",
     "heroH1After": "",
     "heroTagline": "využívá spaced repetition a active recall pro rychlejší zapamatování a delší paměť.",
@@ -1008,7 +1048,7 @@
     "faq1A": "Aplikace s kartičkami pomáhá zapamatovat kartami otázka-odpověď, spaced repetition a active recall. ",
     "faq1AAfter": " přidává generování balíčků AI a plánování opakování na iPhone a Android.",
     "faq2Q": "Je tato aplikace zdarma?",
-    "faq2A": "Ano - bezplatné stažení v App Store. Premium funkce jsou volitelné nákupy v aplikaci.",
+    "faq2A": "Ano - bezplatné stažení v App Store a na Google Play. Premium funkce jsou volitelné nákupy v aplikaci.",
     "faq3Q": "Používá spaced repetition?",
     "faq3A": "Ano. Opakování jsou plánována v optimálních intervalech pro přenos do dlouhodobé paměti.",
     "faq4Q": "Může AI vytvářet kartičky?",
@@ -1027,7 +1067,9 @@
     "support": "Podpora",
     "contact": "Kontakt",
     "langSwitcherLabel": "Jazyk",
-    "downloadPlay": "Stáhnout na Google Play"
+    "downloadPlay": "Stáhnout na Google Play",
+    "storeSoft": "Stáhnout v",
+    "storeStrong": "App Store"
   },
   "da": {
     "htmlLang": "da",
@@ -1036,7 +1078,7 @@
     "metaTitle": "Flashcards Maker - Studiekort | Spaced repetition til iPhone og Android",
     "metaDescription": "Flashcards-app til iPhone og Android - AI-decks, spaced repetition og active recall. Studer smartere til eksamen, sprog og alt du vil huske.",
     "heroSlogan": "Flashcards-app til iPhone og Android",
-    "heroH1Before": "Lær smartere, husk ",
+    "heroH1Before": "Lær <span class=\"highlight-flashcards\">smartere</span>, husk ",
     "heroH1Highlight": "for evigt",
     "heroH1After": "",
     "heroTagline": "bruger spaced repetition og active recall, så du husker hurtigere og længere.",
@@ -1057,7 +1099,7 @@
     "faq1A": "En flashcards-app hjælper med at huske med spørgsmål-svar-kort, spaced repetition og active recall. ",
     "faq1AAfter": " tilføjer AI-deck-generering og repetitionsplanlægning på iPhone og Android.",
     "faq2Q": "Er denne flashcards-app gratis?",
-    "faq2A": "Ja - gratis download i App Store. Premium-funktioner er valgfrie køb i appen.",
+    "faq2A": "Ja - gratis download i App Store og på Google Play. Premium-funktioner er valgfrie køb i appen.",
     "faq3Q": "Bruger den spaced repetition?",
     "faq3A": "Ja. Repetitioner planlægges med optimale intervaller for at flytte information til langtidshukommelsen.",
     "faq4Q": "Kan AI generere flashcards?",
@@ -1076,7 +1118,9 @@
     "support": "Support",
     "contact": "Kontakt",
     "langSwitcherLabel": "Sprog",
-    "downloadPlay": "Hent den på Google Play"
+    "downloadPlay": "Hent den på Google Play",
+    "storeSoft": "Hent i",
+    "storeStrong": "App Store"
   },
   "nb": {
     "htmlLang": "nb",
@@ -1085,7 +1129,7 @@
     "metaTitle": "Flashcards Maker - Studiekort | Spaced repetition for iPhone og Android",
     "metaDescription": "Flashcards-app for iPhone og Android - AI-decks, spaced repetition og active recall. Studer smartere til eksamen, språk og alt du vil huske.",
     "heroSlogan": "Flashcards-app for iPhone og Android",
-    "heroH1Before": "Lær smartere, husk ",
+    "heroH1Before": "Lær <span class=\"highlight-flashcards\">smartere</span>, husk ",
     "heroH1Highlight": "for alltid",
     "heroH1After": "",
     "heroTagline": "bruker spaced repetition og active recall for raskere memorering og lengre husking.",
@@ -1106,7 +1150,7 @@
     "faq1A": "En flashcards-app hjelper med å huske med spørsmål-svar-kort, spaced repetition og active recall. ",
     "faq1AAfter": " legger til AI-deck-generering og repetisjonsplanlegging på iPhone og Android.",
     "faq2Q": "Er denne flashcards-appen gratis?",
-    "faq2A": "Ja - gratis nedlasting i App Store. Premium-funksjoner er valgfrie kjøp i appen.",
+    "faq2A": "Ja - gratis nedlasting i App Store og på Google Play. Premium-funksjoner er valgfrie kjøp i appen.",
     "faq3Q": "Bruker den spaced repetition?",
     "faq3A": "Ja. Repetisjoner planlegges med optimale intervaller for å flytte informasjon til langtidshukommelsen.",
     "faq4Q": "Kan AI generere flashcards?",
@@ -1125,7 +1169,9 @@
     "support": "Support",
     "contact": "Kontakt",
     "langSwitcherLabel": "Språk",
-    "downloadPlay": "Hent på Google Play"
+    "downloadPlay": "Hent på Google Play",
+    "storeSoft": "Last ned i",
+    "storeStrong": "App Store"
   },
   "fi": {
     "htmlLang": "fi",
@@ -1134,7 +1180,7 @@
     "metaTitle": "Flashcards Maker - Opiskelukortit | Spaced repetition iPhone ja Androiden",
     "metaDescription": "Flashcards-sovellus iPhone ja Androiden - AI-pakat, spaced repetition ja active recall. Opiskele fiksummin tentteihin, kieliin ja muistamiseen.",
     "heroSlogan": "Flashcards-sovellus iPhone ja Androiden",
-    "heroH1Before": "Opi fiksummin, muista ",
+    "heroH1Before": "Opi <span class=\"highlight-flashcards\">fiksummin</span>, muista ",
     "heroH1Highlight": "ikuisesti",
     "heroH1After": "",
     "heroTagline": "käyttää spaced repetitionia ja active recallia nopeampaan muistamiseen ja pidempään muistamiseen.",
@@ -1155,7 +1201,7 @@
     "faq1A": "Flashcards-sovellus auttaa muistamaan kysymys-vastaus-korteilla, spaced repetitionilla ja active recallilla. ",
     "faq1AAfter": " lisää AI-pakkageneroinnin ja kertausaikataulun iPhone ja Androiden.",
     "faq2Q": "Onko tämä flashcards-sovellus ilmainen?",
-    "faq2A": "Kyllä - ilmainen lataus App Storesta. Premium-ominaisuudet ovat valinnaisia sovelluksen sisäisiä ostoja.",
+    "faq2A": "Kyllä - ilmainen lataus App Storesta ja Google Playsta. Premium-ominaisuudet ovat valinnaisia sovelluksen sisäisiä ostoja.",
     "faq3Q": "Käyttääkö se spaced repetitionia?",
     "faq3A": "Kyllä. Kertaukset ajoitetaan optimaalisesti siirtämään tieto pitkäaikaismuistiin.",
     "faq4Q": "Voiko AI luoda flashcardeja?",
@@ -1174,7 +1220,9 @@
     "support": "Tuki",
     "contact": "Yhteystiedot",
     "langSwitcherLabel": "Kieli",
-    "downloadPlay": "Lataa Google Playsta"
+    "downloadPlay": "Lataa Google Playsta",
+    "storeSoft": "Lataa",
+    "storeStrong": "App Store"
   },
   "he": {
     "htmlLang": "he",
@@ -1184,7 +1232,7 @@
     "metaTitle": "Flashcards Maker - כרטיסיות | חזרה מרווחת לאייפון ואנדרואיד",
     "metaDescription": "אפליקציית כרטיסיות לאייפון ואנדרואיד - חפיסות AI, חזרה מרווחת וזיכרון פעיל. למדו בחוכמה לבחינות, שפות ושינון.",
     "heroSlogan": "אפליקציית כרטיסיות לאייפון ואנדרואיד",
-    "heroH1Before": "למדו בחוכמה, זכרו ",
+    "heroH1Before": "למדו <span class=\"highlight-flashcards\">בחוכמה</span>, זכרו ",
     "heroH1Highlight": "לתמיד",
     "heroH1After": "",
     "heroTagline": "משתמש בחזרה מרווחת ובזיכרון פעיל כדי לעזור לכם לזכור מהר יותר ולזכור לאורך זמן.",
@@ -1205,7 +1253,7 @@
     "faq1A": "אפליקציית כרטיסיות עוזרת לזכור עם כרטיסי שאלה-תשובה, חזרה מרווחת וזיכרון פעיל. ",
     "faq1AAfter": " מוסיפה יצירת חפיסות AI ותזמון חזרות באייפון ואנדרואיד.",
     "faq2Q": "האם האפליקציה חינמית?",
-    "faq2A": "כן - הורדה חינמית ב-App Store. תכונות Premium הן רכישות אופציונליות באפליקציה.",
+    "faq2A": "כן - הורדה חינמית ב-App Store וב-Google Play. תכונות Premium הן רכישות אופציונליות באפליקציה.",
     "faq3Q": "האם משתמשת בחזרה מרווחת?",
     "faq3A": "כן. חזרות מתוזמנות במרווחים אופטימליים להעברת מידע לזיכרון ארוך טווח.",
     "faq4Q": "האם AI יכול ליצור כרטיסיות?",
@@ -1224,7 +1272,9 @@
     "support": "תמיכה",
     "contact": "יצירת קשר",
     "langSwitcherLabel": "שפה",
-    "downloadPlay": "הורדה ב-Google Play"
+    "downloadPlay": "הורדה ב-Google Play",
+    "storeSoft": "הורדה מ־",
+    "storeStrong": "App Store"
   },
   "ca": {
     "htmlLang": "ca",
@@ -1233,7 +1283,7 @@
     "metaTitle": "Flashcards Maker - Fitxes | Repetició espaiada per a iPhone i Android",
     "metaDescription": "App de fitxes per a iPhone i Android - conjunts amb IA, repetició espaiada i record actiu. Estudia millor per a exàmens, idiomes i memorització.",
     "heroSlogan": "App de fitxes per a iPhone i Android",
-    "heroH1Before": "Aprèn millor, recorda ",
+    "heroH1Before": "Aprèn <span class=\"highlight-flashcards\">millor</span>, recorda ",
     "heroH1Highlight": "per sempre",
     "heroH1After": "",
     "heroTagline": "utilitza repetició espaiada i record actiu per memoritzar més ràpid i recordar més temps.",
@@ -1254,7 +1304,7 @@
     "faq1A": "Una app de fitxes ajuda a memoritzar amb targetes de pregunta i resposta, repetició espaiada i record actiu. ",
     "faq1AAfter": " afegeix generació de conjunts amb IA i programació de repassos a l'iPhone i Android.",
     "faq2Q": "Aquesta app de fitxes és gratuïta?",
-    "faq2A": "Sí - descàrrega gratuïta a l'App Store. Les funcions Premium són compres opcionals dins l'app.",
+    "faq2A": "Sí - descàrrega gratuïta a l'App Store i a Google Play. Les funcions Premium són compres opcionals dins l'app.",
     "faq3Q": "Utilitza repetició espaiada?",
     "faq3A": "Sí. Els repassos es programen en intervals òptims per passar la informació a la memòria a llarg termini.",
     "faq4Q": "La IA pot generar fitxes?",
@@ -1273,7 +1323,9 @@
     "support": "Suport",
     "contact": "Contacte",
     "langSwitcherLabel": "Idioma",
-    "downloadPlay": "Disponible a Google Play"
+    "downloadPlay": "Disponible a Google Play",
+    "storeSoft": "Descarrega a",
+    "storeStrong": "l'App Store"
   },
   "hr": {
     "htmlLang": "hr",
@@ -1282,7 +1334,7 @@
     "metaTitle": "Flashcards Maker - Kartice | Spaced repetition za iPhone i Android",
     "metaDescription": "Aplikacija s karticama za iPhone i Android - AI špilovi, spaced repetition i active recall. Učite pametnije za ispite, jezike i pamćenje.",
     "heroSlogan": "Aplikacija s karticama za iPhone i Android",
-    "heroH1Before": "Učite pametnije, pamtite ",
+    "heroH1Before": "Učite <span class=\"highlight-flashcards\">pametnije</span>, pamtite ",
     "heroH1Highlight": "zauvijek",
     "heroH1After": "",
     "heroTagline": "koristi spaced repetition i active recall za brže pamćenje i duže zadržavanje.",
@@ -1303,7 +1355,7 @@
     "faq1A": "Aplikacija s karticama pomaže pamćenju karticama pitanje-odgovor, spaced repetitionom i active recallom. ",
     "faq1AAfter": " dodaje generiranje AI špilova i planiranje ponavljanja na iPhone i Androidu.",
     "faq2Q": "Je li ova aplikacija besplatna?",
-    "faq2A": "Da - besplatno preuzimanje u App Storeu. Premium značajke su opcionalne kupnje u aplikaciji.",
+    "faq2A": "Da - besplatno preuzimanje u App Storeu i na Google Playu. Premium značajke su opcionalne kupnje u aplikaciji.",
     "faq3Q": "Koristi li spaced repetition?",
     "faq3A": "Da. Ponavljanja se planiraju u optimalnim intervalima za prijenos u dugoročnu memoriju.",
     "faq4Q": "Može li AI generirati kartice?",
@@ -1322,7 +1374,9 @@
     "support": "Podrška",
     "contact": "Kontakt",
     "langSwitcherLabel": "Jezik",
-    "downloadPlay": "Preuzmi na Google Playu"
+    "downloadPlay": "Preuzmi na Google Playu",
+    "storeSoft": "Preuzmi u",
+    "storeStrong": "App Store"
   },
   "el": {
     "htmlLang": "el",
@@ -1331,7 +1385,7 @@
     "metaTitle": "Flashcards Maker - Κάρτες | Spaced repetition για iPhone και Android",
     "metaDescription": "Εφαρμογή καρτών για iPhone και Android - τεύχη AI, spaced repetition και active recall. Μελετήστε πιο έξυπνα για εξετάσεις, γλώσσες και απομνημόνευση.",
     "heroSlogan": "Εφαρμογή καρτών για iPhone και Android",
-    "heroH1Before": "Μελετήστε πιο έξυπνα, θυμηθείτε ",
+    "heroH1Before": "Μελετήστε πιο <span class=\"highlight-flashcards\">έξυπνα</span>, θυμηθείτε ",
     "heroH1Highlight": "για πάντα",
     "heroH1After": "",
     "heroTagline": "χρησιμοποιεί spaced repetition και active recall για ταχύτερη απομνημόνευση και μακροχρόνια διατήρηση.",
@@ -1352,7 +1406,7 @@
     "faq1A": "Μια εφαρμογή καρτών βοηθά στην απομνημόνευση με κάρτες ερώτησης-απάντησης, spaced repetition και active recall. ",
     "faq1AAfter": " προσθέτει δημιουργία τευχών AI και προγραμματισμό επαναλήψεων στο iPhone και Android.",
     "faq2Q": "Είναι δωρεάν αυτή η εφαρμογή;",
-    "faq2A": "Ναι - δωρεάν λήψη στο App Store. Οι λειτουργίες Premium είναι προαιρετικές αγορές στην εφαρμογή.",
+    "faq2A": "Ναι - δωρεάν λήψη στο App Store και στο Google Play. Οι λειτουργίες Premium είναι προαιρετικές αγορές στην εφαρμογή.",
     "faq3Q": "Χρησιμοποιεί spaced repetition;",
     "faq3A": "Ναι. Οι επαναλήψεις προγραμματίζονται σε βέλτιστα διαστήματα για μεταφορά στη μακροχρόνια μνήμη.",
     "faq4Q": "Μπορεί το AI να δημιουργήσει κάρτες;",
@@ -1371,7 +1425,9 @@
     "support": "Υποστήριξη",
     "contact": "Επικοινωνία",
     "langSwitcherLabel": "Γλώσσα",
-    "downloadPlay": "Λήψη από το Google Play"
+    "downloadPlay": "Λήψη από το Google Play",
+    "storeSoft": "Λήψη από το",
+    "storeStrong": "App Store"
   },
   "hi": {
     "htmlLang": "hi",
@@ -1380,7 +1436,7 @@
     "metaTitle": "Flashcards Maker - फ्लैशकार्ड | Spaced repetition iPhone और Android ऐप",
     "metaDescription": "iPhone और Android के लिए फ्लैशकार्ड ऐप - AI डेक, spaced repetition और active recall। परीक्षा, भाषा और याद रखने के लिए समझदारी से पढ़ें।",
     "heroSlogan": "iPhone और Android के लिए फ्लैशकार्ड ऐप",
-    "heroH1Before": "समझदारी से सीखें, ",
+    "heroH1Before": "<span class=\"highlight-flashcards\">समझदारी</span> से सीखें, ",
     "heroH1Highlight": "हमेशा",
     "heroH1After": " याद रखें",
     "heroTagline": "spaced repetition और active recall का उपयोग करके तेज़ याद और लंबी याददाश्त में मदद करता है।",
@@ -1401,7 +1457,7 @@
     "faq1A": "फ्लैशकार्ड ऐप Q&A कार्ड, spaced repetition और active recall से याद रखने में मदद करता है। ",
     "faq1AAfter": " iPhone और Android पर AI डेक जनरेशन और रिव्यू शेड्यूलिंग जोड़ता है।",
     "faq2Q": "क्या यह फ्लैशकार्ड ऐप मुफ़्त है?",
-    "faq2A": "हाँ - App Store पर मुफ़्त डाउनलोड। Premium सुविधाएँ वैकल्पिक इन-ऐप खरीद हैं।",
+    "faq2A": "हाँ - App Store और Google Play पर मुफ़्त डाउनलोड। Premium सुविधाएँ वैकल्पिक इन-ऐप खरीद हैं।",
     "faq3Q": "क्या यह spaced repetition उपयोग करता है?",
     "faq3A": "हाँ। दोहराव सर्वोत्तम अंतराल पर शेड्यूल होते हैं ताकि जानकारी दीर्घकालिक स्मृति में जाए।",
     "faq4Q": "क्या AI फ्लैशकार्ड बना सकता है?",
@@ -1420,7 +1476,9 @@
     "support": "सहायता",
     "contact": "संपर्क",
     "langSwitcherLabel": "भाषा",
-    "downloadPlay": "Google Play पर पाएं"
+    "downloadPlay": "Google Play पर पाएं",
+    "storeSoft": "डाउनलोड करें",
+    "storeStrong": "App Store"
   },
   "hu": {
     "htmlLang": "hu",
@@ -1429,7 +1487,7 @@
     "metaTitle": "Flashcards Maker - Kártyák | Spaced repetition iPhone és Android app",
     "metaDescription": "Flashcard alkalmazás iPhone és Android-ra - AI paklik, spaced repetition és active recall. Tanulj okosabban vizsgákra, nyelvekre és memorizálásra.",
     "heroSlogan": "Flashcard alkalmazás iPhone és Android-ra",
-    "heroH1Before": "Tanulj okosabban, emlékezz ",
+    "heroH1Before": "Tanulj <span class=\"highlight-flashcards\">okosabban</span>, emlékezz ",
     "heroH1Highlight": "örökre",
     "heroH1After": "",
     "heroTagline": "spaced repetitiont és active recallt használ a gyorsabb megjegyzésért és hosszabb megőrzésért.",
@@ -1450,7 +1508,7 @@
     "faq1A": "Egy flashcard alkalmazás kérdés-válasz kártyákkal, spaced repetitionnel és active recallal segít megjegyezni. ",
     "faq1AAfter": " AI pakk generálást és ismétlésütemezést ad hozzá iPhone és Android-on.",
     "faq2Q": "Ingyenes ez a flashcard alkalmazás?",
-    "faq2A": "Igen - ingyenes letöltés az App Store-ban. A Premium funkciók opcionális alkalmazáson belüli vásárlások.",
+    "faq2A": "Igen - ingyenes letöltés az App Store-ban és a Google Playen. A Premium funkciók opcionális alkalmazáson belüli vásárlások.",
     "faq3Q": "Használ spaced repetitiont?",
     "faq3A": "Igen. Az ismétlések optimális időközönként ütemezve segítik a hosszú távú memóriába kerülést.",
     "faq4Q": "Tud AI flashcardot készíteni?",
@@ -1469,7 +1527,9 @@
     "support": "Támogatás",
     "contact": "Kapcsolat",
     "langSwitcherLabel": "Nyelv",
-    "downloadPlay": "Letöltés a Google Playről"
+    "downloadPlay": "Letöltés a Google Playről",
+    "storeSoft": "Letöltés",
+    "storeStrong": "App Store"
   },
   "ms": {
     "htmlLang": "ms",
@@ -1478,7 +1538,7 @@
     "metaTitle": "Flashcards Maker - Kad | Spaced repetition untuk iPhone dan Android",
     "metaDescription": "Aplikasi flashcard untuk iPhone dan Android - dek AI, spaced repetition dan active recall. Belajar lebih bijak untuk peperiksaan, bahasa dan hafalan.",
     "heroSlogan": "Aplikasi flashcard untuk iPhone dan Android",
-    "heroH1Before": "Belajar lebih bijak, ingat ",
+    "heroH1Before": "Belajar lebih <span class=\"highlight-flashcards\">bijak</span>, ingat ",
     "heroH1Highlight": "selama-lamanya",
     "heroH1After": "",
     "heroTagline": "menggunakan spaced repetition dan active recall untuk hafalan lebih pantas dan ingatan lebih lama.",
@@ -1499,7 +1559,7 @@
     "faq1A": "Aplikasi flashcard membantu menghafal dengan kad soal-jawab, spaced repetition dan active recall. ",
     "faq1AAfter": " menambah penjanaan dek AI dan penjadualan ulang kaji pada iPhone dan Android.",
     "faq2Q": "Adakah aplikasi flashcard ini percuma?",
-    "faq2A": "Ya - muat turun percuma di App Store. Ciri Premium ialah pembelian dalam aplikasi pilihan.",
+    "faq2A": "Ya - muat turun percuma di App Store dan Google Play. Ciri Premium ialah pembelian dalam aplikasi pilihan.",
     "faq3Q": "Adakah menggunakan spaced repetition?",
     "faq3A": "Ya. Ulang kaji dijadualkan pada selang optimum untuk memindahkan maklumat ke memori jangka panjang.",
     "faq4Q": "Bolehkah AI menjana flashcard?",
@@ -1518,7 +1578,9 @@
     "support": "Sokongan",
     "contact": "Hubungi",
     "langSwitcherLabel": "Bahasa",
-    "downloadPlay": "Dapatkan di Google Play"
+    "downloadPlay": "Dapatkan di Google Play",
+    "storeSoft": "Muat turun di",
+    "storeStrong": "App Store"
   },
   "es-MX": {
     "htmlLang": "es-MX",
@@ -1527,7 +1589,7 @@
     "metaTitle": "Flashcards Maker - Fichas | Repetición espaciada para iPhone y Android",
     "metaDescription": "App de fichas para iPhone y Android - mazos con IA, repetición espaciada y recuerdo activo. Estudia mejor para exámenes, idiomas y memorización.",
     "heroSlogan": "App de fichas para iPhone y Android",
-    "heroH1Before": "Aprende mejor, recuerda ",
+    "heroH1Before": "Aprende <span class=\"highlight-flashcards\">mejor</span>, recuerda ",
     "heroH1Highlight": "para siempre",
     "heroH1After": "",
     "heroTagline": "usa repetición espaciada y recuerdo activo para memorizar más rápido y recordar más tiempo.",
@@ -1548,7 +1610,7 @@
     "faq1A": "Una app de fichas ayuda a memorizar con tarjetas de preguntas y respuestas, repetición espaciada y recuerdo activo. ",
     "faq1AAfter": " añade generación de mazos con IA y programación de repasos en iPhone y Android.",
     "faq2Q": "¿Esta app de fichas es gratuita?",
-    "faq2A": "Sí - descarga gratuita en el App Store. Las funciones Premium son compras opcionales dentro de la app.",
+    "faq2A": "Sí - descarga gratuita en el App Store y en Google Play. Las funciones Premium son compras opcionales dentro de la app.",
     "faq3Q": "¿Usa repetición espaciada?",
     "faq3A": "Sí. Los repasos se programan en intervalos óptimos para pasar la información a la memoria a largo plazo.",
     "faq4Q": "¿Puede la IA generar fichas?",
@@ -1567,7 +1629,9 @@
     "support": "Soporte",
     "contact": "Contacto",
     "langSwitcherLabel": "Idioma",
-    "downloadPlay": "Consíguela en Google Play"
+    "downloadPlay": "Consíguela en Google Play",
+    "storeSoft": "Descárgalo en el",
+    "storeStrong": "App Store"
   },
   "ro": {
     "htmlLang": "ro",
@@ -1576,7 +1640,7 @@
     "metaTitle": "Flashcards Maker - Fișe | Repetiție spațiată pentru iPhone și Android",
     "metaDescription": "Aplicație de flashcard-uri pentru iPhone și Android - pachete AI, repetiție spațiată și recall activ. Studiază mai inteligent pentru examene, limbi și memorare.",
     "heroSlogan": "Aplicație de flashcard-uri pentru iPhone și Android",
-    "heroH1Before": "Învață mai inteligent, amintește-ți ",
+    "heroH1Before": "Învață mai <span class=\"highlight-flashcards\">inteligent</span>, amintește-ți ",
     "heroH1Highlight": "pentru totdeauna",
     "heroH1After": "",
     "heroTagline": "folosește repetiția spațiată și recall activ pentru memorare mai rapidă și reținere mai lungă.",
@@ -1597,7 +1661,7 @@
     "faq1A": "O aplicație de flashcard-uri ajută la memorare cu carduri întrebare-răspuns, repetiție spațiată și recall activ. ",
     "faq1AAfter": " adaugă generare pachete IA și planificare recapitulări pe iPhone și Android.",
     "faq2Q": "Această aplicație este gratuită?",
-    "faq2A": "Da - descărcare gratuită în App Store. Funcțiile Premium sunt achiziții opționale în aplicație.",
+    "faq2A": "Da - descărcare gratuită în App Store și pe Google Play. Funcțiile Premium sunt achiziții opționale în aplicație.",
     "faq3Q": "Folosește repetiție spațiată?",
     "faq3A": "Da. Recapitulările sunt programate la intervale optime pentru a muta informația în memoria pe termen lung.",
     "faq4Q": "Poate IA genera flashcard-uri?",
@@ -1616,7 +1680,9 @@
     "support": "Asistență",
     "contact": "Contact",
     "langSwitcherLabel": "Limbă",
-    "downloadPlay": "Descarcă de pe Google Play"
+    "downloadPlay": "Descarcă de pe Google Play",
+    "storeSoft": "Descarcă din",
+    "storeStrong": "App Store"
   },
   "sk": {
     "htmlLang": "sk",
@@ -1625,7 +1691,7 @@
     "metaTitle": "Flashcards Maker - Kartičky | Spaced repetition pre iPhone a Android",
     "metaDescription": "Aplikácia s kartičkami pre iPhone a Android - balíčky AI, spaced repetition a active recall. Študujte múdrejšie na skúšky, jazyky a zapamätanie.",
     "heroSlogan": "Aplikácia s kartičkami pre iPhone a Android",
-    "heroH1Before": "Študujte múdrejšie, pamätajte si ",
+    "heroH1Before": "Študujte <span class=\"highlight-flashcards\">múdrejšie</span>, pamätajte si ",
     "heroH1Highlight": "navždy",
     "heroH1After": "",
     "heroTagline": "využíva spaced repetition a active recall pre rýchlejšie zapamätanie a dlhšiu pamäť.",
@@ -1646,7 +1712,7 @@
     "faq1A": "Aplikácia s kartičkami pomáha zapamätať kartami otázka-odpoveď, spaced repetition a active recall. ",
     "faq1AAfter": " pridáva generovanie balíčkov AI a plánovanie opakovaní na iPhone a Android.",
     "faq2Q": "Je táto aplikácia zadarmo?",
-    "faq2A": "Áno - bezplatné stiahnutie v App Store. Premium funkcie sú voliteľné nákupy v aplikácii.",
+    "faq2A": "Áno - bezplatné stiahnutie v App Store a na Google Play. Premium funkcie sú voliteľné nákupy v aplikácii.",
     "faq3Q": "Používa spaced repetition?",
     "faq3A": "Áno. Opakovania sú plánované v optimálnych intervaloch pre prenos do dlhodobej pamäte.",
     "faq4Q": "Môže AI vytvárať kartičky?",
@@ -1665,7 +1731,9 @@
     "support": "Podpora",
     "contact": "Kontakt",
     "langSwitcherLabel": "Jazyk",
-    "downloadPlay": "Stiahnuť z Google Play"
+    "downloadPlay": "Stiahnuť z Google Play",
+    "storeSoft": "Stiahnuť v",
+    "storeStrong": "App Store"
   },
   "fr-CA": {
     "htmlLang": "fr-CA",
@@ -1674,7 +1742,7 @@
     "metaTitle": "Flashcards Maker - Fiches | Répétition espacée pour iPhone et Android",
     "metaDescription": "Appli de fiches pour iPhone et Android - paquets IA, répétition espacée et rappel actif. Étudiez plus efficacement pour les examens, les langues et la mémorisation.",
     "heroSlogan": "Appli de fiches pour iPhone et Android",
-    "heroH1Before": "Apprenez plus intelligemment, retenez ",
+    "heroH1Before": "Apprenez plus <span class=\"highlight-flashcards\">intelligemment</span>, retenez ",
     "heroH1Highlight": "pour toujours",
     "heroH1After": "",
     "heroTagline": "utilise la répétition espacée et le rappel actif pour mémoriser plus vite et retenir plus longtemps.",
@@ -1695,7 +1763,7 @@
     "faq1A": "Une appli de fiches aide à mémoriser avec des cartes question-réponse, la répétition espacée et le rappel actif. ",
     "faq1AAfter": " ajoute la génération de paquets par IA et la planification des révisions sur iPhone et Android.",
     "faq2Q": "Cette appli de fiches est-elle gratuite ?",
-    "faq2A": "Oui - téléchargement gratuit sur l'App Store. Les fonctionnalités Premium sont des achats intégrés optionnels.",
+    "faq2A": "Oui - téléchargement gratuit sur l'App Store et Google Play. Les fonctionnalités Premium sont des achats intégrés optionnels.",
     "faq3Q": "Utilise-t-elle la répétition espacée ?",
     "faq3A": "Oui. Les révisions sont planifiées aux intervalles optimaux pour ancrer les connaissances en mémoire à long terme.",
     "faq4Q": "L'IA peut-elle générer des fiches ?",
@@ -1714,6 +1782,8 @@
     "support": "Assistance",
     "contact": "Contact",
     "langSwitcherLabel": "Langue",
-    "downloadPlay": "Disponible sur Google Play"
+    "downloadPlay": "Disponible sur Google Play",
+    "storeSoft": "Télécharger dans",
+    "storeStrong": "l'App Store"
   }
 }

@@ -11,6 +11,7 @@
     var front = root.querySelector('.study-card.is-front');
     var qText = front.querySelector('.study-q .study-text');
     var aText = front.querySelector('.study-a .study-text');
+    var photos = front.querySelectorAll('.study-photo');
     front.querySelector('.study-q .study-kicker').textContent = data.q;
     front.querySelector('.study-a .study-kicker').textContent = data.a;
     front.querySelector('.study-hint').textContent = data.hint;
@@ -32,49 +33,65 @@
         timer = window.setTimeout(fn, reduced ? 0 : ms);
     };
 
+    function paint(card) {
+        var q = card.q || card[0];
+        var a = card.a || card[1];
+        qText.textContent = q;
+        aText.textContent = a;
+        var image = card.img ? 'url("' + card.img + '")' : 'none';
+        photos.forEach(function (photo) { photo.style.backgroundImage = image; });
+    }
+
     function show() {
-        var card = cards[index % cards.length];
-        qText.textContent = card[0];
-        aText.textContent = card[1];
+        paint(cards[index % cards.length]);
         phase = 'question';
-        root.classList.remove('is-rated');
+        root.classList.remove('is-rated', 'is-picked');
         front.classList.remove('is-flipped', 'is-leave', 'is-press');
         rates.forEach(function (btn) { btn.classList.remove('is-on'); });
-        wait(1500, tap);
+        wait(2200, tap);
     }
 
     function tap() {
         if (phase !== 'question') return;
-        phase = 'tapping';
-        front.classList.add('is-press');
-        wait(180, function () {
-            front.classList.remove('is-press');
-            phase = 'flipped';
-            front.classList.add('is-flipped');
-            wait(760, revealRates);
-        });
+        phase = 'flipped';
+        front.classList.add('is-flipped');
+        wait(1100, revealRates);
     }
 
     function revealRates() {
         if (phase !== 'flipped') return;
         phase = 'rated';
         root.classList.add('is-rated');
-        wait(1100, function () { advance('good'); });
+        wait(1500, function () { advance('good'); });
     }
 
     function advance(rate) {
         if (phase === 'leaving') return;
         phase = 'leaving';
         window.clearTimeout(timer);
+        root.classList.add('is-picked');
         rates.forEach(function (btn) {
             btn.classList.toggle('is-on', btn.getAttribute('data-rate') === rate);
         });
-        wait(420, function () {
+        wait(900, function () {
             root.classList.remove('is-rated');
-            front.classList.add('is-leave');
-            wait(360, function () {
-                index += 1;
-                show();
+            wait(420, function () {
+                front.classList.add('is-leave');
+                wait(700, function () {
+                    index += 1;
+                    front.classList.add('is-instant');
+                    front.classList.remove('is-flipped', 'is-press');
+                    root.classList.remove('is-picked');
+                    rates.forEach(function (btn) { btn.classList.remove('is-on'); });
+                    paint(cards[index % cards.length]);
+                    requestAnimationFrame(function () {
+                        requestAnimationFrame(function () {
+                            front.classList.remove('is-instant', 'is-leave');
+                            phase = 'question';
+                            wait(2200, tap);
+                        });
+                    });
+                });
             });
         });
     }
