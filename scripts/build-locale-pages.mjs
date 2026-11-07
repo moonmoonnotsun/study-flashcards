@@ -96,7 +96,7 @@ function parseFeatureBullets(description) {
     .split('• ')
     .slice(1, 7)
     .map((part) => {
-      const trimmed = part.trim().replace(/—/g, '-');
+      const trimmed = part.trim().replace(/[—–]/g, '-');
       const sections = trimmed.split('\n\n');
       if (sections.length > 1) {
         const [title, ...rest] = sections;
@@ -465,7 +465,7 @@ template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 for (const code of LOCALES) {
   const outDir = path.join(ROOT, localeDir(code));
   fs.mkdirSync(outDir, { recursive: true });
-  const html = buildLocalePage(code);
+  const html = buildLocalePage(code).replace(/[—–]/g, '-');
   fs.writeFileSync(path.join(outDir, 'index.html'), html);
   console.log(`Built ${localeDir(code)}/index.html (${code})`);
 }
