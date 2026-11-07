@@ -48,7 +48,7 @@
         root.classList.remove('is-rated', 'is-picked');
         front.classList.remove('is-flipped', 'is-leave', 'is-press');
         rates.forEach(function (btn) { btn.classList.remove('is-on'); });
-        wait(2200, tap);
+        wait(1400, tap);
     }
 
     function tap() {
@@ -88,7 +88,7 @@
                         requestAnimationFrame(function () {
                             front.classList.remove('is-instant', 'is-leave');
                             phase = 'question';
-                            wait(2200, tap);
+                            wait(1400, tap);
                         });
                     });
                 });

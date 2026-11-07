@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { deckCopy } from '../locales/deck-copy.mjs';
+import { seoCopy } from '../locales/seo-copy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -332,6 +333,22 @@ function buildLocalePage(code) {
     `<p class="section-subtitle">${o.faqSubtitle}</p>`,
   );
 
+  const seo = seoCopy[code] || seoCopy.en;
+  const seoEn = seoCopy.en;
+  const swap = (from, to) => {
+    if (from && from !== to) html = html.replace(from, to);
+  };
+  swap(seoEn.memorizeTitle, seo.memorizeTitle);
+  swap(seoEn.memorizeLead, seo.memorizeLead);
+  swap(`<h3>${seoEn.m1t}</h3>`, `<h3>${seo.m1t}</h3>`);
+  swap(seoEn.m1b, seo.m1b);
+  swap(`<h3>${seoEn.m2t}</h3>`, `<h3>${seo.m2t}</h3>`);
+  swap(seoEn.m2b, seo.m2b);
+  swap(`<h3>${seoEn.m3t}</h3>`, `<h3>${seo.m3t}</h3>`);
+  swap(seoEn.m3b, seo.m3b);
+  swap(seoEn.barsTitle, seo.barsTitle);
+  swap(seoEn.barsLead, seo.barsLead);
+
   const faqPairs = [
     [o.faq1Q, `${o.faq1A}${nameMark}${o.faq1AAfter}`],
     [o.faq2Q, o.faq2A],
@@ -339,6 +356,8 @@ function buildLocalePage(code) {
     [o.faq4Q, o.faq4A],
     [o.faq5Q, o.faq5A],
     [o.faq6Q, o.faq6A],
+    [seo.faq7Q, seo.faq7A],
+    [seo.faq8Q, seo.faq8A],
   ];
   const faqBlocks = [...html.matchAll(/<span class="faq-question-text">[^<]*<\/span>[\s\S]*?<p class="faq-answer">[\s\S]*?<\/p>/g)];
   faqBlocks.forEach((match, i) => {
@@ -349,6 +368,20 @@ function buildLocalePage(code) {
       `<span class="faq-question-text">${q}</span>\n                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>\n                    </summary>\n                    <div class="faq-answer-wrap">\n                        <p class="faq-answer">${a}</p>`,
     );
   });
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqPairs.map(([name, text]) => ({
+      '@type': 'Question',
+      name,
+      acceptedAnswer: { '@type': 'Answer', text: String(text).replace(/<[^>]+>/g, '') },
+    })),
+  };
+  html = html.replace(
+    /<script type="application\/ld\+json">\s*\{[\s\S]*?"@type": "FAQPage"[\s\S]*?<\/script>/,
+    `<script type="application/ld+json">\n    ${JSON.stringify(faqSchema, null, 4)}\n    </script>`,
+  );
 
   html = html.replace(/<h2 class="cta-title">[^<]*<\/h2>/, `<h2 class="cta-title">${o.ctaTitle}</h2>`);
   html = html.replace(

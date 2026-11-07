@@ -62,7 +62,7 @@
     <link rel="preconnect" href="https://apps.apple.com" crossorigin>
     <link rel="dns-prefetch" href="https://apps.apple.com">
     <link rel="preload" href="../assets/css/main.css" as="style">
-    <link rel="preload" href="../assets/css/app-page.css?v=34" as="style">
+    <link rel="preload" href="../assets/css/app-page.css?v=42" as="style">
     <link rel="preload" href="../assets/images/cards/optimized/main-screen.png" as="image">
     
     <!-- Favicon -->
@@ -74,7 +74,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/app-page.css?v=34">
+    <link rel="stylesheet" href="../assets/css/app-page.css?v=42">
     
     <!-- Mixpanel Analytics -->
     <script type="text/javascript">
@@ -143,13 +143,15 @@
         
         .app-hero {
             background: none;
-            padding-top: 80px;
-            padding-bottom: 100px;
-            min-height: 100vh;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-bottom: 0;
+            min-height: 100svh;
+            min-height: 100dvh;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
         }
-        
         .app-hero::before {
             display: none;
         }
@@ -176,9 +178,6 @@
                 transform: scale(1.05);
             }
             
-            #features.app-section {
-                padding-top: 0;
-            }
         }
         
         /* Remove shadows on mobile to prevent lag during fadeInUp animation */
@@ -931,9 +930,38 @@ body, button, input, select, .app-tagline, .store {
             border-radius: 28px;
             padding: 48px 44px;
             box-shadow: 0 18px 40px -30px rgba(20, 40, 80, 0.4);
+            margin: 0 auto !important;
+        }
+        #review-bars .section-title,
+        #features .section-title,
+        #about-flashcards .section-title,
+        #memorize .section-title { margin-top: 0 !important; }
+        #review-bars.app-section,
+        #features.app-section,
+        #about-flashcards.app-section,
+        #memorize.app-section {
+            padding-top: 72px !important;
+            padding-bottom: 0 !important;
+        }
+        #memorize.app-section { padding-bottom: 72px !important; }
+        #review-bars .section-header,
+        #memorize .section-header { margin-bottom: 72px !important; }
+        @media (max-width: 768px) {
+            #review-bars.app-section,
+            #features.app-section,
+            #about-flashcards.app-section,
+            #memorize.app-section {
+                padding-top: 48px !important;
+                padding-bottom: 0 !important;
+            }
+            #memorize.app-section { padding-bottom: 48px !important; }
+            #review-bars .section-header,
+            #memorize .section-header { margin-bottom: 48px !important; }
+            #about-flashcards .section-header { margin: 0 auto !important; padding: 28px 22px; }
         }
         .faq-list {
-            max-width: 760px;
+            max-width: 900px;
+            width: 100%;
             margin: 0 auto;
             background: #fff;
             border: 1px solid rgba(20, 28, 45, 0.06);
@@ -942,6 +970,9 @@ body, button, input, select, .app-tagline, .store {
             box-shadow: 0 18px 40px -30px rgba(20, 40, 80, 0.4);
         }
         .faq-item {
+            width: 100%;
+            align-self: stretch;
+            box-sizing: border-box;
             border: 0 !important;
             border-radius: 0 !important;
             border-bottom: 1px solid #eef1f6 !important;
@@ -952,7 +983,12 @@ body, button, input, select, .app-tagline, .store {
         .faq-item:last-child { border-bottom: 0 !important; }
         .faq-question { padding: 18px 22px !important; }
         .faq-answer { padding: 0 22px 18px !important; }
-        .cta-section { padding-top: 20px; }
+        #faq.app-section { padding-bottom: 36px !important; }
+        .cta-section { padding: 72px 20px !important; }
+        .app-footer { margin-top: 0 !important; }
+        @media (max-width: 768px) {
+            .cta-section { padding: 48px 20px !important; }
+        }
         .cta-card {
             background: #ffffff !important;
             border: 1px solid rgba(20, 28, 45, 0.06) !important;
@@ -994,129 +1030,188 @@ body, button, input, select, .app-tagline, .store {
         @media (prefers-reduced-motion: reduce) {
             .feature-card, .phone { animation: none; }
         }
+        @media (max-width: 768px) {
+            .app-hero {
+                height: 100svh;
+                max-height: 100svh;
+                padding: 18px 20px 16px !important;
+                margin: 0 0 36px !important;
+                display: flex !important;
+                flex-direction: column;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+            .app-hero-container {
+                flex: 1;
+                min-height: 0;
+                width: 100%;
+                display: flex !important;
+                flex-direction: column;
+                gap: 0 !important;
+                padding: 0 !important;
+                transform: none;
+            }
+            .app-hero-content { flex: none; }
+            .app-icon-large { margin-bottom: 12px !important; }
+            .app-logo {
+                width: 64px !important;
+                height: 64px !important;
+                padding: 0 !important;
+                border-radius: 16px !important;
+            }
+            .app-title {
+                font-size: 2rem !important;
+                line-height: 1.08 !important;
+                margin: 0 0 10px !important;
+            }
+            .app-tagline {
+                font-size: 1rem !important;
+                line-height: 1.45 !important;
+                margin: 0 auto 14px !important;
+                max-width: 21rem !important;
+                display: block !important;
+            }
+            .app-badges { margin: 0 0 14px !important; }
+            .app-badges .store {
+                padding: 12px 16px !important;
+                font-size: 17px !important;
+                border-radius: 14px !important;
+                gap: 10px;
+            }
+            .app-hero-visual {
+                flex: 1 1 auto;
+                min-height: 0;
+                width: 100%;
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+            }
+            .app-hero-visual::before { display: none; }
+            .phone {
+                width: min(310px, 78vw);
+                height: 100%;
+                margin: 0 auto;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                animation: none !important;
+            }
+            .phone-bezel {
+                flex: 1;
+                min-height: 0;
+                display: flex;
+                padding: 9px;
+                border-radius: 40px;
+                box-sizing: border-box;
+            }
+            .phone-screen {
+                height: auto !important;
+                flex: 1;
+                width: 100%;
+                min-height: 0;
+                border-radius: 32px;
+            }
+            .phone-island { width: 84px; height: 22px; margin-left: -42px; top: 10px; }
+            .study-rates {
+                position: relative;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                width: calc(100% - 8px);
+                height: 54px;
+                margin: -20px auto 0;
+                gap: 6px;
+            }
+            .study-rates b { font-size: 13px; }
+            .study-rates small { font-size: 11px; }
+            .study-q .study-body { padding: 14px 16px 14px; }
+            .study-text { font-size: 18px; }
+            .study-a .study-text { font-size: 22px; }
+            .study-a .study-body { bottom: 22px; }
+            .study-hint { margin-top: 6px; font-size: 13px; }
+        }
+        @media (max-width: 768px) and (max-height: 740px) {
+            .app-hero { padding: 12px 16px 10px !important; }
+            .app-logo { width: 48px !important; height: 48px !important; }
+            .app-icon-large { margin-bottom: 8px !important; }
+            .app-title { font-size: 1.65rem !important; margin-bottom: 6px !important; }
+            .app-tagline { font-size: 0.92rem !important; margin-bottom: 8px !important; }
+            .app-badges { margin-bottom: 8px !important; }
+        }
 </style>
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Flashcards Moreo - 学习卡片",
-        "alternateName": ["Flashcards App", "Flashcards Maker", "Study Cards"],
-        "url": "https://study-flashcards.app/zh/",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "iOS, Android",
-        "inLanguage": "zh-Hans",
-        "datePublished": "2024-01-01",
-        "dateModified": "2026-07-06",
-        "author": {
-            "@type": "Organization",
-            "name": "omoot apps",
-            "url": "https://omoot.app/"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "description": "Flashcards app for iPhone and Android with AI-generated decks, spaced repetition, active recall, and pre-made study libraries. Built for students, language learners, and exam prep.",
-        "screenshot": "https://study-flashcards.app/assets/images/cards/optimized/main-screen.png",
-        "featureList": [
-            "AI 闪卡生成",
-            "间隔重复算法",
-            "主动回忆练习",
-            "学习连续天数与活动",
-            "预制学习卡片集",
-            "自定义闪卡"
-        ],
-        "softwareVersion": "1.0",
-        "downloadUrl": "https://apps.apple.com/cn/app/flashcards-maker-study-cards/id6756944111",
-        "installUrl": "https://apps.apple.com/cn/app/flashcards-maker-study-cards/id6756944111",
-        "softwareRequirements": "Requires iOS 15.0 or later"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Flashcards Moreo - 学习卡片",
-        "alternateName": "Study Flashcards App",
-        "url": "https://study-flashcards.app/zh/",
-        "description": "Official landing page for Flashcards AI Study - Moreo, a flashcards app for iPhone and Android.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "omoot apps",
-            "url": "https://omoot.app/"
-        }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "omoot apps",
-        "url": "https://omoot.app/",
-        "logo": "https://study-flashcards.app/assets/images/cards/optimized/logo.png"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is a flashcards app?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A flashcards app helps you memorize with question-and-answer cards, spaced repetition, and active recall. Flashcards AI Study - Moreo is a flashcards app for iPhone and Android with AI deck generation and science-backed review scheduling."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Flashcards AI Study - Moreo free?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Flashcards AI Study - Moreo is free to download on the App Store and Google Play. Optional premium features are available as in-app purchases."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does this flashcards app use spaced repetition?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. The app schedules reviews at optimal intervals so you move information from short-term to long-term memory efficiently."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can AI generate flashcards for me?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Enter a topic and the app creates ready-to-study flashcards for languages, science, medicine, history, exam prep, and more."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are there pre-made flashcard decks?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Browse curated decks for medical, languages, science, exams, history, geography, art, literature, and more - or create your own custom decks."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is this good for exam prep?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Students use it for SAT, GRE, MCAT, language tests, and general memorization with active recall and progress tracking."
-                }
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "什么是闪卡应用？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "闪卡应用通过问答卡片、间隔重复和主动回忆帮助记忆。Flashcards Moreo - 学习卡片 在 iPhone 和 Android 上提供 AI 卡组生成与复习计划。"
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "这款闪卡应用免费吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "是的 - App Store 和 Google Play 免费下载。高级功能为可选内购。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "是否使用间隔重复？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "是的。在最佳间隔安排复习，将知识转入长期记忆。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "AI 能生成闪卡吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以。输入主题即可获得语言、科学、医学、历史和备考卡片。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "有预制卡组吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "有。医学、语言、科学、考试、历史等精选卡组，还可自定义。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "适合备考吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "适合。学生用于 SAT、GRE、MCAT、语言考试和日常记忆，含连续天数与统计。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is spaced repetition?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Spaced repetition is reviewing a flash card just before you would forget it. Easy cards wait longer. Hard cards come back sooner. That schedule is how a flashcards app moves facts into long-term memory."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is active recall?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Active recall means answering from memory before you look at the back of the card. You flip, then rate how well you knew it. That effort is what makes flash cards stick."
+            }
+        }
+    ]
+}
     </script>
     
     <!-- BreadcrumbList Structured Data -->
@@ -1234,10 +1329,52 @@ body, button, input, select, .app-tagline, .store {
                     </div>
                 </div>
                 <script type="application/json" id="deck-copy">{"q":"问题","a":"答案","hint":"点一下翻转","again":"重来","hard":"困难","good":"良好","easy":"简单","t1":"1 分钟","t2":"5 分钟","t3":"10 分钟","t4":"13 天","cards":[{"q":"土星环由什么组成？","a":"冰、尘埃和岩石","img":"/assets/images/deck/saturn.jpg"},{"q":"是什么绘出了北极光？","a":"太阳风撞上大气","img":"/assets/images/deck/aurora.jpg"},{"q":"为什么我们只看见月球的一面？","a":"它每公转自转一圈","img":"/assets/images/deck/moon.jpg"},{"q":"咖啡因挡住什么让人清醒？","a":"腺苷","img":"/assets/images/deck/coffee.jpg"}]}</script>
-                <script src="../assets/js/deck.js?v=28"></script>
+                <script src="../assets/js/deck.js?v=29"></script>
             </div>
         </div>
     </div>
+
+    <section class="app-section" id="review-bars">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">After <span class="title-accent">four weeks</span></h2>
+                <p class="section-subtitle">Flashcards keep climbing. Rereading notes does not.</p>
+            </div>
+            <div class="progress-card">
+                <div class="progress-head">
+                    <h3 class="progress-card-title">What you remember</h3>
+                    <div class="progress-legend">
+                        <span><i class="legend-app"></i>With flashcards</span>
+                        <span><i class="legend-notes"></i>Re-reading notes</span>
+                    </div>
+                </div>
+                <div class="progress-plot" role="img" aria-label="What you remember. With flashcards climbs over four weeks. Re-reading notes stays flat.">
+                    <svg class="progress-svg" viewBox="0 0 680 250" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="progress-area" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#2C78FA" stop-opacity="0.22"/>
+                                <stop offset="1" stop-color="#2C78FA" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <line x1="0" x2="680" y1="58" y2="58" stroke="#E9ECF3" stroke-dasharray="4 5"/>
+                        <line x1="0" x2="680" y1="114.7" y2="114.7" stroke="#E9ECF3" stroke-dasharray="4 5"/>
+                        <line x1="0" x2="680" y1="171.3" y2="171.3" stroke="#E9ECF3" stroke-dasharray="4 5"/>
+                        <line x1="0" x2="680" y1="228" y2="228" stroke="#E9ECF3" stroke-dasharray="4 5"/>
+                        <path class="progress-area" d="M 8 221.2 C 19.9 219.5, 55.8 213.6, 79.6 211 C 103.5 208.5, 127.3 210.7, 151.1 205.9 C 175 201.1, 198.9 187.2, 222.7 182.1 C 246.6 177, 270.3 181, 294.2 175.3 C 318.1 169.6, 342 154.3, 365.8 148.1 C 389.7 141.9, 413.5 145, 437.3 137.9 C 461.2 130.8, 485.1 112.7, 508.9 105.6 C 532.8 98.5, 556.6 101.9, 580.4 95.4 C 604.3 88.9, 640.1 71.3, 652 66.5 L 652 250 L 8 250 Z" fill="url(#progress-area)"/>
+                        <path class="progress-line progress-grey" d="M 8 221.2 C 19.9 219.8, 55.8 215, 79.6 212.7 C 103.5 210.4, 127.3 209.6, 151.1 207.6 C 175 205.6, 198.9 201.7, 222.7 200.8 C 246.6 200, 270.3 203.4, 294.2 202.5 C 318.1 201.7, 342 196.5, 365.8 195.7 C 389.7 194.9, 413.5 198, 437.3 197.4 C 461.2 196.8, 485.1 192.9, 508.9 192.3 C 532.8 191.7, 556.6 194.3, 580.4 194 C 604.3 193.7, 640.1 191.2, 652 190.6" fill="none" stroke="#C3C8D6" stroke-width="3.5" stroke-linecap="round"/>
+                        <path class="progress-line progress-blue" d="M 8 221.2 C 19.9 219.5, 55.8 213.6, 79.6 211 C 103.5 208.5, 127.3 210.7, 151.1 205.9 C 175 201.1, 198.9 187.2, 222.7 182.1 C 246.6 177, 270.3 181, 294.2 175.3 C 318.1 169.6, 342 154.3, 365.8 148.1 C 389.7 141.9, 413.5 145, 437.3 137.9 C 461.2 130.8, 485.1 112.7, 508.9 105.6 C 532.8 98.5, 556.6 101.9, 580.4 95.4 C 604.3 88.9, 640.1 71.3, 652 66.5" fill="none" stroke="#2C78FA" stroke-width="4.5" stroke-linecap="round"/>
+                    </svg>
+                    <span class="progress-dot"></span>
+                    <span class="progress-pill">Goal reached</span>
+                    <span class="progress-forget">Mostly forgotten</span>
+                </div>
+                <div class="progress-axis">
+                    <span>Today</span>
+                    <span>In 4 weeks</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="app-section" id="features">
         <div class="container">
@@ -1327,6 +1464,29 @@ body, button, input, select, .app-tagline, .store {
         </div>
     </section>
 
+    <section class="app-section" id="memorize">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">用来记住知识的 <span class="title-accent">抽认卡应用</span></h2>
+                <p class="section-subtitle">抽认卡能记住，是因为你先主动回忆再翻面。间隔重复会在你快忘记时把卡片带回来。</p>
+            </div>
+            <div class="seo-grid">
+                <article class="seo-card">
+                    <h3>Spaced repetition</h3>
+                    <p>New cards return soon. Cards you know wait longer. Cards you miss come back quickly. You study what is about to slip, not what you already remember.</p>
+                </article>
+                <article class="seo-card">
+                    <h3>Active recall</h3>
+                    <p>The question is on the front. You answer before you see the back, then rate Again, Hard, Good, or Easy. Pulling the answer out of memory is what makes flash cards work better than rereading notes.</p>
+                </article>
+                <article class="seo-card">
+                    <h3>Flash cards, not rereading</h3>
+                    <p>A flash card is one fact and one check. Make a deck with AI from a topic, open a pre-made deck, or write your own. Then review on iPhone or Android.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="app-section app-section-alt" id="faq">
         <div class="container">
             <div class="section-header">
@@ -1388,6 +1548,24 @@ body, button, input, select, .app-tagline, .store {
                         <p class="faq-answer">适合。学生用于 SAT、GRE、MCAT、语言考试和日常记忆，含连续天数与统计。</p>
                     </div>
                 </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">What is spaced repetition?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Spaced repetition is reviewing a flash card just before you would forget it. Easy cards wait longer. Hard cards come back sooner. That schedule is how a flashcards app moves facts into long-term memory.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-question-text">What is active recall?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Active recall means answering from memory before you look at the back of the card. You flip, then rate how well you knew it. That effort is what makes flash cards stick.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -1418,7 +1596,7 @@ body, button, input, select, .app-tagline, .store {
                     <div class="logo-circle"><img src="../assets/images/cards/optimized/logo.png" alt="" width="40" height="40"></div>
                     <span class="logo-text">Flashcards Moreo - 学习卡片</span>
                 </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-lang">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">语言</label>
                     <select id="lang-select" class="lang-select" aria-label="语言">
                         <option value="/">EN</option>
@@ -1480,6 +1658,46 @@ body, button, input, select, .app-tagline, .store {
             window.addEventListener('pageshow', function (event) {
                 if (event.persisted) resetCarouselScroll();
             });
+        })();
+        (function () {
+            var card = document.querySelector('.progress-card');
+            if (!card) return;
+            var grey = card.querySelector('.progress-grey');
+            var blue = card.querySelector('.progress-blue');
+            function arm(path) {
+                var len = path.getTotalLength();
+                path.style.strokeDasharray = len + ' ' + len;
+                path.style.strokeDashoffset = String(len);
+                return len;
+            }
+            function play() {
+                card.classList.add('is-in');
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || typeof grey.animate !== 'function') {
+                    grey.style.strokeDashoffset = '0';
+                    blue.style.strokeDashoffset = '0';
+                    return;
+                }
+                var greyLen = arm(grey);
+                var blueLen = arm(blue);
+                grey.animate(
+                    [{ strokeDashoffset: greyLen }, { strokeDashoffset: 0 }],
+                    { duration: 1600, easing: 'cubic-bezier(0.45, 0.05, 0.55, 1)', fill: 'forwards' }
+                );
+                blue.animate(
+                    [{ strokeDashoffset: blueLen }, { strokeDashoffset: 0 }],
+                    { duration: 2200, delay: 700, easing: 'cubic-bezier(0.45, 0.05, 0.55, 1)', fill: 'forwards' }
+                );
+            }
+            if (!('IntersectionObserver' in window)) {
+                play();
+                return;
+            }
+            var watch = new IntersectionObserver(function (entries) {
+                if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+                watch.disconnect();
+                play();
+            }, { threshold: 0.4 });
+            watch.observe(card);
         })();
         (function () {
             document.querySelectorAll('.faq-item').forEach(function (details) {
